@@ -1,0 +1,40 @@
+{
+	"main.html": {
+		"refer": [
+			"setting.html"
+		],
+		"resources": []
+	},
+	"login.html": {
+		"refer": [
+			"main.html",
+			"reg.html",
+			"notify.html"
+		],
+		"resources": []
+	},
+	"reg.html": {
+		"refer": [
+			"login.html"
+		]
+	},
+	"notify.html": {
+		"refer": [
+			"more.html",
+			"count.html"
+		]
+	},
+	"more.html": {
+		"refer": [
+			"notify.html",
+			"count.html",
+			"login.html"
+		]
+	},
+	"count.html": {
+		"refer": [
+			"notify.html",
+			"more.html"
+		]
+	}
+}
