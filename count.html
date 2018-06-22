@@ -15,6 +15,9 @@
 			.mui-btn {
 				padding: 10px;
 			}
+			.mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after{
+				content: '\e563';
+			}
 		</style>
 	</head>
 	<body>
@@ -23,9 +26,25 @@
 		</header>
 		<div class="mui-content">
 			<div class="mui-content-padded">
-				<p>
-					这里是对账
-				</p>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-collapse">
+				        <a class="mui-navigate-right title" href="#">海贝管理系统</a>
+				        <div class="mui-collapse-content">
+				            <p>内容待定</p>
+				        </div>
+				    </li>
+				</ul>
+				
+				<div class="mui-card">
+					<div class="mui-card-header">
+						商户交易详情
+					</div>
+					<div class="mui-card-content">
+						内容
+					</div>
+				</div>
+				
+				<!--底部tab start-->
                 <nav class="mui-bar mui-bar-tab">
                     <a class="mui-tab-item" href="notify.html">
                         <span class="mui-icon iconfont icon-tongzhi"></span>
@@ -40,6 +59,7 @@
                         <span class="mui-tab-label">更多</span>
                     </a>
                 </nav>
+                <!--底部tab end-->
 			</div>
 		</div>
 		<script src="js/mui.min.js"></script>

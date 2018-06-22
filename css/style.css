@@ -24,6 +24,10 @@ body {
 .mui-bar .mui-icon:active{
 	opacity: 0;
 }
-.mui-table-view-cell>a:not(.mui-btn).mui-active{
-	background-color: #2571bf;
+.title{
+	font-size: 24px;
+	color: #000;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	color:#000;
 }
