@@ -18,6 +18,49 @@
 			.mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after{
 				content: '\e563';
 			}
+			.mui-card{
+				margin: 0 auto;
+				padding: 10px;;
+			}
+			.mui-card-content{
+				margin: 10px;
+			}
+			.middle{
+				height:40px;
+				line-height: 40px;;
+			}
+			.right{
+				margin-right: 8px;;
+			}
+			.left{
+				margin-left: 33px;;
+			}
+			.center{
+				text-align: center;
+			}
+			select{
+				border: 1px solid #ddd;
+			}
+			.mui-table-view .mui-table-view-cell strong, .mui-table-view .mui-table-view-cell span{
+				color:#000;
+			}
+			.fixed-circle{
+				position: fixed;
+				bottom: 60px;
+				right:10px;
+				text-align: center;
+				width:30px;
+				height:30px;
+				line-height: 30px;;
+				border:2px solid #aaa;
+				border-radius: 50%;
+			}
+			.fixed-circle .mui-icon{
+				font-size: 30px;
+				font-weight: bold;
+				color:#aaa;
+				margin-left: -2px;
+			}
 		</style>
 	</head>
 	<body>
@@ -36,11 +79,157 @@
 				</ul>
 				
 				<div class="mui-card">
-					<div class="mui-card-header">
+					<!--页眉，放置标题-->
+					<div class="mui-card-header gray card-tit">商户交易详情</div>
+					<!--内容区-->
+					<div class="mui-card-content">
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备号</div>
+							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备备注</div>
+							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle">收银员</div>
+							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle">海贝操作员</div>
+							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle">商户单号</div>
+							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备类型</div>
+							<div  class="mui-col-sm-8 mui-col-xs-8">
+								<select name="">
+									<option value="">选择...</option>
+									<option value="">海贝</option>
+									<option value="">贝芯</option>
+									<option value="">贝屏</option>
+									<option value="">软海贝</option>
+									<option value="">一码付</option>
+								</select>
+							</div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle">钱包类型</div>
+							<div  class="mui-col-sm-8 mui-col-xs-8">
+								<select name="">
+									<option value="">选择...</option>
+									<option value="">微信支付</option>
+									<option value="">支付宝支付</option>
+									<option value="">百度钱包</option>
+									<option value="">手机QQ钱包</option>
+									<option value="">京东钱包</option>
+								</select>
+							</div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle">交易时间</div>
+							<div  class="mui-col-sm-4 mui-col-xs-4"><input type="date"/></div>
+							<div  class="mui-col-sm-4 mui-col-xs-4"><input type="date"/></div>
+						</div>
+						<div class="mui-row center">
+							<button class="mui-btn mui-btn-warning mui-col-xs-3 right left">查找</button>
+							<button class="mui-btn mui-btn-danger mui-col-xs-3 right">清除</button>
+							<button class="mui-btn mui-btn-primary mui-col-xs-3">下载</button>
+						</div>						
+					</div>
+				</div>
+				<div class="mui-card">
+					<div class="mui-card-header gray card-tit">
 						商户交易详情
 					</div>
 					<div class="mui-card-content">
-						内容
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">设备类型：</strong>
+									<span class="mui-col-xs-8">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">设备号：</strong>
+									<span class="mui-col-sm-8">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">设备备注：</strong>
+									<span class="mui-col-xs-5">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">收银员：</strong>
+									<span class="mui-col-xs-5">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">海贝操作员：</strong>
+									<span class="mui-col-xs-8">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">输入金额：</strong>
+									<span class="mui-col-xs-4">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">币种：</strong>
+									<span class="mui-col-xs-8">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">交易时间：</strong>
+									<span class="mui-col-xs-8">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">商户单号：</strong>
+									<span class="mui-col-xs-8">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">钱包类型：</strong>
+									<span class="mui-col-xs-8">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-4">操作：</strong>
+									<span class="mui-col-xs-8">操作</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell"></li>
+						</ul>
+					</div>
+					<div class="mui-card-footer">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell center black">No records found to show</li>
+							<li class="mui-table-view-cell mui-row">
+								<span class="mui-col-xs-3 center">总设备数量</span>
+								<span class="mui-col-xs-6 center">总交易金额（币种为输入金额币种）</span>
+								<span class="mui-col-xs-3 center">总交易笔数</span>
+							</li>
+							<li class="mui-table-view-cell mui-row">
+								<span class="mui-col-xs-3 center">0</span>
+								<span class="mui-col-xs-6 center">0</span>
+								<span class="mui-col-xs-3 center">0</span>
+							</li>
+						</ul>
 					</div>
 				</div>
 				
@@ -60,6 +249,9 @@
                     </a>
                 </nav>
                 <!--底部tab end-->
+			</div>
+			<div class="fixed-circle">
+				<span class="mui-icon mui-icon-arrowthinup"></span>
 			</div>
 		</div>
 		<script src="js/mui.min.js"></script>

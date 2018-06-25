@@ -5,7 +5,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-.mui-content{height: 100%;}
+.mui-content{height: 100%;margin-bottom: 50px;;}
 .bg-white{
 	background-color: #fff;
 }
@@ -28,6 +28,16 @@ body {
 	font-size: 24px;
 	color: #000;
 }
+.card-tit{
+	font-size:20px;
+	padding: 10px;
+}
 .mui-table-view-cell>a:not(.mui-btn){
+	color:#000;
+}
+.gray{
+	color:#5c5c5c;
+}
+.black{
 	color:#000;
 }
