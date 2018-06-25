@@ -137,6 +137,12 @@
 			.mui-table-view-cell>a:not(.mui-btn).mui-active{
 				background-color: #2571bf;
 			}
+			.lanset .mui-icon{
+				color:#2571af;
+				font-size: 30px;
+				font-weight: bold;
+				float: right;
+			}
 		</style>
 		<link rel="stylesheet" type="text/css" href="./css/feedback-page.css" />
 		<link rel="stylesheet" href="css/iconfont.css" />
@@ -283,8 +289,9 @@
 				<h1 class="mui-center mui-title white">语言设置</h1>
 			</div>
 			<div class="mui-page-content">
-				<ul class="mui-table-view">
-					<li class="mui-table-view-cell">auto</li>
+				<ul class="mui-table-view lanset">
+					<!--TODO:根据点击，来判断把icon加在哪个元素上-->
+					<li class="mui-table-view-cell">auto <span class="mui-icon mui-icon-checkmarkempty"></span></li>
 					<li class="mui-table-view-cell">English</li>
 					<li class="mui-table-view-cell">中文（简体）</li>
 					<li class="mui-table-view-cell">中文（繁体）</li>
