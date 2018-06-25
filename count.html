@@ -250,8 +250,10 @@
                 </nav>
                 <!--底部tab end-->
 			</div>
-			<div class="fixed-circle">
-				<span class="mui-icon mui-icon-arrowthinup"></span>
+			<div class="fixed-circle" id="totop">
+				<a href="#totop">
+					<span class="mui-icon mui-icon-arrowthinup"></span>
+				</a>
 			</div>
 		</div>
 		<script src="js/mui.min.js"></script>
@@ -303,6 +305,36 @@
 					};
 				});
 			}(mui, document));
+			// 返回顶部
+			if($(".fixed-circle").length){
+				console.log($(".fixed-circle"));
+				var gototop = $(".fixed-circle");
+				var $docu = $(document);
+				gototopfn=function() {
+					if($docu.scrollTop()<200){
+						gototop.fadeOut();
+					} else {
+						gototop.fadeIn();
+					}
+				};
+				var gototop_timer;
+				$(window).scroll(function() {
+					clearTimeout(gototop_timer);
+					gototop_timer = setTimeout(gototopfn, 300)
+				});
+				gototop.on('tap', function() {
+					$("html,body").animate({
+						scrollTop:0
+					},{
+						'duration':'fast',
+						'complete':function(){
+							gototop.delay(100).fadeOut();
+						}
+					});
+					return false;
+				});
+				gototopfn();
+			}
 		</script>
 	</body>
 </html>
