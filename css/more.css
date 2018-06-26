@@ -255,3 +255,6 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	font-weight: bold;
 	vertical-align: bottom;
 }
+#cashpage .content,#cashierpage .content{
+	padding: 20px;
+}
