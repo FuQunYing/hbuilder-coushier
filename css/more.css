@@ -3,10 +3,9 @@ body {
 	background-color: #efeff4;
 }
 hr{
-	
 	width:90%;
 	text-align: center;
-	border-top-width: .5px !important;
+	border-top-width: 0;
 	border-left-width: 0;
 	border-right-width: 0;
 	margin-top: 0;
@@ -105,7 +104,7 @@ hr{
 	display: block;
 }
 .mui-page .mui-table-view:first-child {
-	margin-top: 15px;
+	margin: 5px;
 }
 .mui-page .mui-table-view:last-child {
 	margin-bottom: 30px;
@@ -134,9 +133,9 @@ hr{
 	margin: 35px auto;
 	display: none;
 }
-.mui-table-view-cell>a:not(.mui-btn).mui-active{
+/*.mui-table-view-cell>a:not(.mui-btn).mui-active{
 	background-color: #2571bf;
-}
+}*/
 .lanset li{
 	height:52px;
 	line-height: 30px;
