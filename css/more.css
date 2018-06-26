@@ -239,3 +239,6 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 .hide{
 	display: none;
 }
+#info .fixed-circle{
+	bottom: 10px;
+}

@@ -52,23 +52,6 @@
 			.mui-table-view .mui-table-view-cell strong, .mui-table-view .mui-table-view-cell span{
 				color:#000;
 			}
-			.fixed-circle{
-				position: fixed;
-				bottom: 60px;
-				right:10px;
-				text-align: center;
-				width:30px;
-				height:30px;
-				line-height: 30px;;
-				border:2px solid #aaa;
-				border-radius: 50%;
-			}
-			.fixed-circle .mui-icon{
-				font-size: 30px;
-				font-weight: bold;
-				color:#aaa;
-				margin-left: -2px;
-			}
 		</style>
 	</head>
 	<body>
@@ -270,8 +253,8 @@
 			</div>
 		</div>
 		<script src="js/mui.min.js"></script>
-		<script src="js/app.js"></script>
 		<script src="libs/easymob-webim-sdk/jquery-1.11.1.js"></script>
+		<script src="js/app.js"></script>
 		<script>
 			mui.init();
 			console.log(2);
@@ -318,36 +301,6 @@
 					};
 				});
 			}(mui, document));
-			// 返回顶部
-			if($(".fixed-circle").length){
-				console.log($(".fixed-circle"));
-				var gototop = $(".fixed-circle");
-				var $docu = $(document);
-				gototopfn=function() {
-					if($docu.scrollTop()<200){
-						gototop.fadeOut();
-					} else {
-						gototop.fadeIn();
-					}
-				};
-				var gototop_timer;
-				$(window).scroll(function() {
-					clearTimeout(gototop_timer);
-					gototop_timer = setTimeout(gototopfn, 300)
-				});
-				gototop.on('tap', function() {
-					$("html,body").animate({
-						scrollTop:0
-					},{
-						'duration':'fast',
-						'complete':function(){
-							gototop.delay(100).fadeOut();
-						}
-					});
-					return false;
-				});
-				gototopfn();
-			}
 		</script>
 	</body>
 </html>

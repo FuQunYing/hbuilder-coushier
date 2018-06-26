@@ -3,6 +3,36 @@
  * 当您要参考这个演示程序进行相关 app 的开发时，
  * 请注意将相关方法调整成 “基于服务端Service” 的实现。
  **/
+// 返回顶部
+if($(".fixed-circle").length){
+	console.log($(".fixed-circle"));
+	var gototop = $(".fixed-circle");
+	var $docu = $(document);
+	gototopfn=function() {
+		if($docu.scrollTop()<65){
+			gototop.fadeOut();
+		} else {
+			gototop.fadeIn();
+		}
+	};
+	var gototop_timer;
+	$(window).scroll(function() {
+		clearTimeout(gototop_timer);
+		gototop_timer = setTimeout(gototopfn, 300)
+	});
+	gototop.on('tap', function() {
+		$("html,body").animate({
+			scrollTop:0
+		},{
+			'duration':'fast',
+			'complete':function(){
+				gototop.delay(100).fadeOut();
+			}
+		});
+		return false;
+	});
+	gototopfn();
+}
 (function($, owner) {
 	/**
 	 * 用户登录
