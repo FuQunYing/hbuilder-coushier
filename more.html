@@ -9,143 +9,9 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<link rel="stylesheet" href="./css/mui.min.css">
-		<style>
-			html,
-			body {
-				background-color: #efeff4;
-			}
-			.mui-views,
-			.mui-view,
-			.mui-pages,
-			.mui-page,
-			.mui-page-content {
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: 0;
-				bottom: 0;
-				width: 100%;
-				height: 100%;
-				background-color: #efeff4;
-			}
-			.mui-pages {
-				top: 46px;
-				height: auto;
-			}
-			.mui-scroll-wrapper,
-			.mui-scroll {
-				background-color: #efeff4;
-			}
-			.mui-page.mui-transitioning {
-				-webkit-transition: -webkit-transform 200ms ease;
-				transition: transform 200ms ease;
-			}
-			.mui-page-left {
-				-webkit-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
-			}
-			.mui-ios .mui-page-left {
-				-webkit-transform: translate3d(-20%, 0, 0);
-				transform: translate3d(-20%, 0, 0);
-			}
-			.mui-navbar {
-				position: fixed;
-				right: 0;
-				left: 0;
-				z-index: 10;
-				height: 44px;
-				background-color: #f7f7f8;
-			}
-			.mui-navbar .mui-bar {
-				position: absolute;
-				background: transparent;
-				text-align: center;
-			}
-			.mui-android .mui-navbar-inner.mui-navbar-left {
-				opacity: 0;
-			}
-			.mui-ios .mui-navbar-left .mui-left,
-			.mui-ios .mui-navbar-left .mui-center,
-			.mui-ios .mui-navbar-left .mui-right {
-				opacity: 0;
-			}
-			.mui-navbar .mui-btn-nav {
-				-webkit-transition: none;
-				transition: none;
-				-webkit-transition-duration: .0s;
-				transition-duration: .0s;
-			}
-			.mui-navbar .mui-bar .mui-title {
-				display: inline-block;
-				position: static;
-				width: auto;
-			}
-			.mui-page-shadow {
-				position: absolute;
-				right: 100%;
-				top: 0;
-				width: 16px;
-				height: 100%;
-				z-index: -1;
-				content: '';
-			}
-			.mui-page-shadow {
-				background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .01) 50%, rgba(0, 0, 0, .2) 100%);
-				background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .01) 50%, rgba(0, 0, 0, .2) 100%);
-			}
-			.mui-navbar-inner.mui-transitioning,
-			.mui-navbar-inner .mui-transitioning {
-				-webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
-				transition: opacity 200ms ease, transform 200ms ease;
-			}
-			.mui-page {
-				display: none;
-			}
-			.mui-pages .mui-page {
-				display: block;
-			}
-			.mui-page .mui-table-view:first-child {
-				margin-top: 15px;
-			}
-			.mui-page .mui-table-view:last-child {
-				margin-bottom: 30px;
-			}
-			.mui-table-view {
-				margin-top: 20px;
-			}
-			.mui-table-view:after {
-				height: 0;
-			}
-			.mui-table-view span.mui-pull-right {
-				color: #999;
-			}
-			.mui-table-view-divider {
-				background-color: #efeff4;
-				font-size: 14px;
-			}
-			.mui-table-view-divider:before,
-			.mui-table-view-divider:after {
-				height: 0;
-			}
-			.mui-content-padded {
-				margin: 10px 0px;
-			}
-			.mui-locker {
-				margin: 35px auto;
-				display: none;
-			}
-			.mui-table-view-cell>a:not(.mui-btn).mui-active{
-				background-color: #2571bf;
-			}
-			.lanset .mui-icon{
-				color:#2571af;
-				font-size: 30px;
-				font-weight: bold;
-				float: right;
-			}
-		</style>
 		<link rel="stylesheet" type="text/css" href="./css/feedback-page.css" />
 		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/more.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
@@ -216,7 +82,18 @@
 				<h1 class="mui-center mui-title white">个人信息</h1>
 			</div>
 			<div class="mui-page-content">
-				个人信息展示和个人信息修改
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-collapse">
+				        <a class="mui-navigate-right title" href="#">海贝管理系统</a>
+				        <div class="mui-collapse-content">
+				            <p>内容待定</p>
+				        </div>
+				    </li>
+				</ul>
+				
+				<div class="mui-card">
+					<div class="mui-card-header gray card-tit">个人信息 <span>查看并编辑个人信息</span></div>
+				</div>
 			</div>
 		</div>
 		
@@ -292,9 +169,9 @@
 				<ul class="mui-table-view lanset">
 					<!--TODO:根据点击，来判断把icon加在哪个元素上-->
 					<li class="mui-table-view-cell">auto <span class="mui-icon mui-icon-checkmarkempty"></span></li>
-					<li class="mui-table-view-cell">English</li>
-					<li class="mui-table-view-cell">中文（简体）</li>
-					<li class="mui-table-view-cell">中文（繁体）</li>
+					<li class="mui-table-view-cell">English <span></span></li>
+					<li class="mui-table-view-cell">中文（简体）<span></span></li>
+					<li class="mui-table-view-cell">中文（繁体）<span></span></li>
 				</ul>
 			</div>
 		</div>
@@ -319,91 +196,7 @@
 	<script src='./libs/easymob-webim-sdk/json2.js'></script>
 	<script src="./libs/easymob-webim-sdk/easemob.im-1.0.5.js"></script>
 	<script src='./js/feedback.js'></script>
-	<!--<script src="./js/feedback-page.js"></script>-->
 	<script src="./js/app.js"></script>
-	<script>
-		mui.init();
-		console.log(3);
-		$("body").css("min-height",screen.availHeight);
-		mui('body').on('tap','.mui-bar a',function(){
-			if (this.href.indexOf("#") === -1){
-				document.location.href=this.href;	
-			}
-		});
-		$("body").on('swiperight', function(){
-			document.location.href="count.html";
-		});
-		 //初始化单页view
-		var viewApi = mui('#app').view({
-			defaultPage: '#more'
-		});
-		//初始化单页的区域滚动
-//		mui('.mui-scroll-wrapper').scroll();
-
-		//去评分
-		$("#score").on('tap', function() {
-			console.log('评分');
-			if (mui.os.ios) {
-				location.href = 'https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=682211190&pageNumber=0&sortOrdering=2&type=&mt=8';
-			} else if (mui.os.android) {
-				plus.runtime.openURL("market://details?id=io.dcloud.HelloMUI", function(e) {
-					plus.runtime.openURL("market://details?id=io.dcloud.HelloMUI", function(e) {
-						mui.alert("360手机助手和应用宝，你一个都没装，暂时无法评分，感谢支持");
-					}, "com.qihoo.appstore");
-				}, "com.tencent.android.qqdownloader");
-			}
-		});
-
-		 //退出操作******************
-		 $("#exit").on('tap', function() {
-			mui.confirm("是否退出登录？",'',['取消','确定'], function(e) {
-				if(e.index === 1) {
-					window.localStorage.clear();
-					mui.toast('您已退出登录');
-					location.href="login.html";
-				} else if (e.index === 0) {
-					console.log('取消退出');
-				}
-			}, 'div')
-		});
-		
-		var view = viewApi.view;
-		(function($) {
-			//处理view的后退与webview后退
-			var oldBack = $.back;
-			$.back = function() {
-				if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
-					viewApi.back();
-				} else { //执行webview后退
-					oldBack();
-				}
-			};
-			//监听页面切换事件方案1,通过view元素监听所有页面切换事件，目前提供pageBeforeShow|pageShow|pageBeforeBack|pageBack四种事件(before事件为动画开始前触发)
-			//第一个参数为事件名称，第二个参数为事件回调，其中e.detail.page为当前页面的html对象
-			view.addEventListener('pageBeforeShow', function(e) {
-				//				console.log(e.detail.page.id + ' beforeShow');
-			});
-			view.addEventListener('pageShow', function(e) {
-				//进入手执设定界面时
-				if (e.detail.page.id == 'lock') {
-					var settings = app.getSettings();
-					/*if (!settings.autoLogin) {
-						plus.nativeUI.toast('当前没有启用 “自动登录”，需要在登录时启用 "自动登录"，设定的手势锁屏才会升效。');
-					}*/
-					var lockStateButton = document.getElementById("lockState");
-					var locker = document.querySelector('.mui-locker');
-					lockStateButton.classList[settings.gestures ? 'add' : 'remove']('mui-active')
-					locker.style.display = settings.gestures ? 'block' : 'none';
-				}
-				//				console.log(e.detail.page.id + ' show');
-			});
-			view.addEventListener('pageBeforeBack', function(e) {
-				//				console.log(e.detail.page.id + ' beforeBack');
-			});
-			view.addEventListener('pageBack', function(e) {
-				//				console.log(e.detail.page.id + ' back');
-			});
-		})(mui);
-	</script>
+	<script src="js/more.js"></script>
 
 </html>
