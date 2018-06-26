@@ -235,4 +235,5 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 .confirm{
 	background-color: #36c6d3;
 	color: #fff;
+	border:1px solid #fff;
 }
