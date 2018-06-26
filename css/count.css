@@ -1,0 +1,44 @@
+ul {
+	font-size: 14px;
+	color: #8f8f94;
+}
+hr{
+	width:90%;
+	text-align: center;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	margin-top: 0;
+}
+.mui-btn {
+	padding: 10px;
+}
+.mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after{
+	content: '\e563';
+}
+.mui-card{
+	margin: 0 auto;
+	padding: 10px;;
+}
+.mui-card-content{
+	margin: 10px;
+}
+.middle{
+	height:40px;
+	line-height: 40px;;
+}
+.right{
+	margin-right: 8px;;
+}
+.left{
+	margin-left: 33px;;
+}
+.center{
+	text-align: center;
+}
+select{
+	border: 1px solid #ddd;
+}
+.mui-table-view .mui-table-view-cell strong, .mui-table-view .mui-table-view-cell span{
+	color:#000;
+}

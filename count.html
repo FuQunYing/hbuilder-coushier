@@ -7,52 +7,7 @@
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/iconfont.css" />
-		<style>
-			ul {
-				font-size: 14px;
-				color: #8f8f94;
-			}
-			hr{
-				width:90%;
-				text-align: center;
-				border-top-width: 0;
-				border-left-width: 0;
-				border-right-width: 0;
-				margin-top: 0;
-			}
-			.mui-btn {
-				padding: 10px;
-			}
-			.mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after{
-				content: '\e563';
-			}
-			.mui-card{
-				margin: 0 auto;
-				padding: 10px;;
-			}
-			.mui-card-content{
-				margin: 10px;
-			}
-			.middle{
-				height:40px;
-				line-height: 40px;;
-			}
-			.right{
-				margin-right: 8px;;
-			}
-			.left{
-				margin-left: 33px;;
-			}
-			.center{
-				text-align: center;
-			}
-			select{
-				border: 1px solid #ddd;
-			}
-			.mui-table-view .mui-table-view-cell strong, .mui-table-view .mui-table-view-cell span{
-				color:#000;
-			}
-		</style>
+		<link rel="stylesheet" href="css/count.css" />
 	</head>
 	<body>
 		<header class="mui-bar mui-bar-nav bg-blue" style="padding-right: 15px;">
@@ -255,52 +210,6 @@
 		<script src="js/mui.min.js"></script>
 		<script src="libs/easymob-webim-sdk/jquery-1.11.1.js"></script>
 		<script src="js/app.js"></script>
-		<script>
-			mui.init();
-			console.log(2);
-			$("body").css("min-height",screen.availHeight-50);
-			mui('body').on('tap','.mui-bar a',function(){
-				if (this.href.indexOf("#") === -1){
-					console.log(1);
-					document.location.href=this.href;	
-				}
-			});
-			/*$("body").on('swipeleft', function(){
-				document.location.href="more.html";
-			});
-			$("body").on('swiperight', function(){
-				document.location.href="notify.html";
-			});*/
-			(function($, doc) {
-				$.init();
-				var settings = app.getSettings();
-				var account = doc.getElementById('account');
-				//
-				window.addEventListener('show', function() {
-					var state = app.getState();
-					account.innerText = state.account;
-				}, false);
-				$.plusReady(function() {
-					var settingPage = $.preload({
-						"id": 'setting',
-						"url": 'setting.html'
-					});
-					$.oldBack = mui.back;
-					var backButtonPress = 0;
-					$.back = function(event) {
-						backButtonPress++;
-						if (backButtonPress > 1) {
-							plus.runtime.quit();
-						} else {
-							plus.nativeUI.toast('再按一次退出应用');
-						}
-						setTimeout(function() {
-							backButtonPress = 0;
-						}, 1000);
-						return false;
-					};
-				});
-			}(mui, document));
-		</script>
+		<script src="js/count.js"></script>
 	</body>
 </html>
