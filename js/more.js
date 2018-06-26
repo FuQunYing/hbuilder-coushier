@@ -1,16 +1,16 @@
 mui.init();
 console.log(3);
 
-$("body").css("min-height",screen.availHeight);
+$("body").css("min-height",screen.availHeight-50);
 mui('body').on('tap','.mui-bar a',function(){
 	if (this.href.indexOf("#") === -1){
 		document.location.href=this.href;	
 	}
 });
 
-$("body").on('swiperight', function(){
+/*$("body").on('swiperight', function(){
 	document.location.href="count.html";
-});
+});*/
 
  //初始化单页view
 var viewApi = mui('#app').view({
@@ -24,6 +24,35 @@ $(".lanset").on('tap', 'li', function(e){
 	$that.children('span').addClass('mui-icon mui-icon-checkmarkempty');
 	$that.siblings().children('span').removeClass('mui-icon mui-icon-checkmarkempty');
 });
+//修改信息与修改密码切换
+$(".changeinfo").on('tap', function(){
+	if(!$(".pwd-form").hasClass("hide")){
+		$(".pwd-form").addClass("hide");
+	}
+	if($(".changepwd").hasClass("activate")){
+		$(".changepwd").removeClass("activate");
+	}
+	if(!$(".changeinfo").hasClass("activate")){
+		$(".changeinfo").addClass("activate");
+	}
+	if($(".info-form").hasClass("hide")){
+		$(".info-form").removeClass("hide");
+	}
+})
+$(".changepwd").on('tap', function(){
+	if($(".pwd-form").hasClass("hide")){
+		$(".pwd-form").removeClass("hide");
+	}
+	if(!$(".changepwd").hasClass("activate")){
+		$(".changepwd").addClass("activate");
+	}
+	if($(".changeinfo").hasClass("activate")){
+		$(".changeinfo").removeClass("activate");
+	}
+	if(!$(".info-form").hasClass("hide")){
+		$(".info-form").addClass("hide");
+	}
+})
 
 //去评分
 $("#score").on('tap', function() {

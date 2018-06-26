@@ -221,7 +221,7 @@ hr{
 .change p .changeinfo{
 	margin-right: 10px;
 }
-.info-form{
+.info-form, .pwd-form{
 	padding: 24px;
 }
 input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
@@ -236,4 +236,7 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	background-color: #36c6d3;
 	color: #fff;
 	border:1px solid #fff;
+}
+.hide{
+	display: none;
 }

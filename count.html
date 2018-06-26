@@ -267,19 +267,19 @@
 		<script>
 			mui.init();
 			console.log(2);
-			$("body").css("min-height",screen.availHeight);
+			$("body").css("min-height",screen.availHeight-50);
 			mui('body').on('tap','.mui-bar a',function(){
 				if (this.href.indexOf("#") === -1){
 					console.log(1);
 					document.location.href=this.href;	
 				}
 			});
-			$("body").on('swipeleft', function(){
+			/*$("body").on('swipeleft', function(){
 				document.location.href="more.html";
 			});
 			$("body").on('swiperight', function(){
 				document.location.href="notify.html";
-			});
+			});*/
 			(function($, doc) {
 				$.init();
 				var settings = app.getSettings();
