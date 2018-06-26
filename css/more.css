@@ -2,6 +2,15 @@ html,
 body {
 	background-color: #efeff4;
 }
+hr{
+	
+	width:90%;
+	text-align: center;
+	border-top-width: .5px !important;
+	border-left-width: 0;
+	border-right-width: 0;
+	margin-top: 0;
+}
 .mui-views,
 .mui-view,
 .mui-pages,
@@ -86,6 +95,9 @@ body {
 	-webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
 	transition: opacity 200ms ease, transform 200ms ease;
 }
+.mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after{
+	content: '\e563';
+}
 .mui-page {
 	display: none;
 }
@@ -136,9 +148,76 @@ body {
 	float: right;
 }
 .mui-card{
-	margin: 0 auto;
+	margin: 5px;
 }
 .card-tit span{
 	font-size: 12px;
 	color: #aaa;
+}
+.center{
+	text-align: center;
+}
+.userinfo{
+	padding: 10px;
+	height: 70px;
+}
+.avatar{
+	width: 50px;
+	float: left;
+	margin: auto 20px;
+}
+.lowercase{
+	font-size: 16px;
+	font-weight: bold;
+	color:#5a7391;
+}
+.upcase{
+	font-size: 12px;
+	color:#5b9bd1;
+}
+.userinfo-detail{
+	padding: 10px;
+	margin-left: 20px;
+}
+.info-tit{
+	color:#7f90a4;
+	font-size:16px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.userinfo-detail .mui-icon{
+	display: inline-block;
+	width:12px;
+	height:12px;
+	line-height: 12px;
+	font-size: 12px;
+	border-radius: 3px;
+	text-align: center;
+	margin-right:10px;
+	background-color: #abb6c4;
+	color:#fff;
+}
+.change{
+	font-size: 14px;
+	font-weight: bold;
+	color: #578ebe;
+	padding: 15px 24px 0 24px;
+}
+.change p{
+	float: right;
+	color: #666;
+	font-size: 12px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.change .activate{
+	color: #404040;
+	border-bottom: 2px solid #36c6d3;
+}
+.change p span{
+	display: inline-block;
+	height: 30px;
+}
+.change p .changeinfo{
+	margin-right: 10px;
 }
