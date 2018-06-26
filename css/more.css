@@ -97,6 +97,9 @@ hr{
 .mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after{
 	content: '\e563';
 }
+#cashierpage .mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after{
+	content: '\e581';
+}
 .mui-page {
 	display: none;
 }
