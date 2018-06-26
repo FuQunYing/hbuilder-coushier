@@ -221,3 +221,18 @@ hr{
 .change p .changeinfo{
 	margin-right: 10px;
 }
+.info-form{
+	padding: 24px;
+}
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
+	height:34px;
+	border: 1px solid #c2cad8;
+}
+.mui-row .middle{
+	height: 34px;
+	line-height: 34px;
+}
+.confirm{
+	background-color: #36c6d3;
+	color: #fff;
+}
