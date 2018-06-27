@@ -273,7 +273,7 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 .mui-page .mui-table-view:last-child{
 	margin-bottom: 0;
 }
-.mui-table-view-cell.mui-collapse .mui-collapse-content{
+#cashierpage .content .mui-table-view-cell.mui-collapse .mui-collapse-content{
 	padding: 0;
 }
 .mui-table-view-cell{padding: 11px 10px;}

@@ -7,6 +7,18 @@ mui('body').on('tap','.mui-bar a',function(){
 		document.location.href=this.href;	
 	}
 });
+//日期
+$(".time").focus(function() {
+	var start=$(this);
+	start.prop('type','date');
+	setTimeout(function(){start.trigger('click');},10)
+});
+$(".time").blur(function() {
+	var obj=$(this);
+	if(!obj.val()){
+		obj.prop('type','text');
+	}
+});
 /*$("body").on('swipeleft', function(){
 	document.location.href="more.html";
 });

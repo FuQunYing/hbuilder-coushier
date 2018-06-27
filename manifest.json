@@ -297,7 +297,9 @@
 		}
 	},
 	"unpackage": [
-		"README.md"
+	  "README.md",
+	  "libs/easymob-webim-sdk/quickstart.md",
+	  "images/user-photo.png"
 	],
 	"fullscreen": true
 }
