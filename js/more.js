@@ -54,20 +54,6 @@ $(".changepwd").on('tap', function(){
 	}
 })
 
-//去评分
-$("#score").on('tap', function() {
-	console.log('评分');
-	if (mui.os.ios) {
-		location.href = 'https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=682211190&pageNumber=0&sortOrdering=2&type=&mt=8';
-	} else if (mui.os.android) {
-		plus.runtime.openURL("market://details?id=io.dcloud.HelloMUI", function(e) {
-			plus.runtime.openURL("market://details?id=io.dcloud.HelloMUI", function(e) {
-				mui.alert("360手机助手和应用宝，你一个都没装，暂时无法评分，感谢支持");
-			}, "com.qihoo.appstore");
-		}, "com.tencent.android.qqdownloader");
-	}
-});
-
  //退出操作******************
  $("#exit").on('tap', function() {
 	mui.confirm("是否退出登录？",'',['取消','确定'], function(e) {

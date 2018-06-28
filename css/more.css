@@ -252,6 +252,7 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	font-weight: bold;
 	margin: 10px;
 	padding-left: 10px;
+	line-height: 20px;
 }
 .sub-tit .mui-icon{
 	font-size: 16px;
@@ -276,7 +277,6 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 #cashierpage .content .mui-table-view-cell.mui-collapse .mui-collapse-content{
 	padding: 0;
 }
-.mui-table-view-cell{padding: 11px 10px;}
 #cashierpage .mui-collapse-content li p{
 	font-size: 13px;
 }
