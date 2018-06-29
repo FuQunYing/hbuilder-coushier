@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
+		<meta id="i18n_pagename" content="index-common"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
 		<link href="css/mui.min.css" rel="stylesheet" />
@@ -104,17 +105,17 @@
 			<form id='login-form' class="mui-input-group">
 				<div class="mui-input-row">
 					<label><span class="mui-icon mui-icon-person"></span></label>
-					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
+					<input id='account' type="text" class="mui-input-clear mui-input i18n-input" selectname="userPlaceholder" selectattr="placeholder">
 				</div>
 				<div class="mui-input-row">
 					<label><span class="mui-icon mui-icon-locked"></span></label>
-					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入密码">
+					<input id='password' type="password" class="mui-input-clear mui-input i18n-input" selectname="pwdPlaceholder" selectattr="placeholder">
 				</div>
 			</form>
 			<form class="mui-input-group">
 				<ul class="mui-table-view mui-table-view-chevron">
 					<li class="mui-table-view-cell">
-						自动登录
+						<span class="i18n" name="autologin">自动登录</span>
 						<div id="autoLogin" class="mui-switch">
 							<div class="mui-switch-handle"></div>
 						</div>
@@ -122,16 +123,22 @@
 				</ul>
 			</form>
 			<div class="mui-content-padded">
-				<button id='login' class="mui-btn mui-btn-block mui-btn-primary bg-blue">登录</button>
+				<button id='login' class="mui-btn mui-btn-block mui-btn-primary bg-blue">
+					<span class="i18n" name="login">登录</span>
+				</button>
 				<div class="link-area">
-					<a class="blue" href="reg.html" id="reg">注册账号</a>
+					<a class="blue" href="reg.html" id="reg">
+						<span class="i18n" name="reg">注册账号</span>
+					</a>
 				</div>
 			</div>
 		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/mui.min.js"></script>
 		<script src="js/mui.enterfocus.js"></script>
 		<script src="js/app.js"></script>
-		<script src="libs/easymob-webim-sdk/jquery-1.11.1.js"></script>
+		<script src="js/jquery.i18n.properties.js"></script>
+		<script src="js/language.js"></script>
 		<script>
 			mui.init();
 			mui('body').on('tap','#reg',function(){

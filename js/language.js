@@ -1,48 +1,3 @@
-/**
- * cookie操作
- */
-var getCookie = function(name,value,options) {
-    if(typeof value != 'undefined') { // 如果给name和value，设置value
-        options = options || {};
-        if (value === null) {
-            value = '';
-            options.exprires = -1;
-        }
-        var expires = '';
-        if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
-            var date;
-            if(typeof options.expires == 'number') {
-                date = new Date();
-                date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
-            } else {
-                date = options.expires;
-            }
-            expires = '; expires=' + date.toUTCString();//使用expires属性，IE不支持max-age
-        }
-        var path = options.path ? '; path=' + options.path: '';
-        var domain = options.domain ? '; domain=' + options.domain: '';
-        var secure = options.secure ? '; secure' : '';
-        var s = [cookie, expires, path, domain, secure].join('');
-        var c = [name, '=', encodeURIComponent(value)].join('');
-        var cookie = [c,expires,path,domain, secure].join('');
-        document.cookie = cookie;
-    } else { // 只给了name，就获取cookie
-        var cookieValue = null;
-        if (document.cookie && document.cookie != '') {
-            var cookies = document.cookie.split(';');
-            for (var i = 0; i < cookies.length; i++) {
-                var cookie = jQuery.trim(cookies[i]);
-                if (cookie.substring(0,name.length + 1) == (name + '=')) {
-                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                    break;
-                }
-            }
-        }
-        return cookieValue;
-
-    }
-};
-
 /*
 * 获取浏览器语言类型
 * @ return {string} 浏览器国家语言
@@ -102,9 +57,10 @@ var execI18n = function(){
         language: i18nLanguage,
         callback: function(){//加载成功后设置显示内容
             var insertEle=$(".i18n");
-            console.log('i18n写入中');
+            console.log('i18n写入中',insertEle);
             insertEle.each(function() {
                 //根据i18n元素的name获取内容写入
+                console.log($(this));
                 $(this).html($.i18n.prop($(this).attr('name')));
             });
             console.log('写入完毕');
@@ -113,7 +69,7 @@ var execI18n = function(){
             insertInputEle.each(function() {
                 var selectAttr=$(this).attr('selectorattr');
                 if(!selectAttr) {
-                    selectAttr = 'value';
+                    selectAttr = 'placeholder';
                 }
                 $(this).attr(selectAttr,$.i18n.prop($(this).attr('selectname')))
             })
@@ -121,20 +77,4 @@ var execI18n = function(){
         }
     })
 };
-//页面执行，加载执行
-$(function(){
-    //执行i18n翻译
-    execI18n();
-    //将语言选择默认选中缓存中的值
-    $('#language option[value=' + i18nLanguage +']').attr("selected", true);
-    //选择语言
-    $('#language').on('change',function(){
-        var language = $(this).children('option:selected').val();
-        console.log(language);
-        getCookie('userLanguage',language,{
-            expires:30,
-            path: '/'
-        });
-        location.reload();
-    });
-});
+execI18n();

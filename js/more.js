@@ -19,10 +19,12 @@ var viewApi = mui('#app').view({
 
 //语言选择
 $(".lanset").on('tap', 'li', function(e){
-	console.log($(e.target));
+	console.log($(this)[0].title);
 	var $that = $(e.target);
+	var language=$(this)[0].title;
 	$that.children('span').addClass('mui-icon mui-icon-checkmarkempty');
 	$that.siblings().children('span').removeClass('mui-icon mui-icon-checkmarkempty');
+	getCookie('userLanguage',language,{expires:30,path:'/'})
 });
 //修改信息与修改密码切换
 $(".changeinfo").on('tap', function(){
