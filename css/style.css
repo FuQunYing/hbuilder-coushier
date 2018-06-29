@@ -25,7 +25,8 @@ body {
 	opacity: 0;
 }
 .mui-table-view{
-	border-radius: 6px;
+	border-radius: 10px;
+	margin-bottom: 10px;
 }
 .title{
 	font-size: 24px;
@@ -70,6 +71,7 @@ body {
 	line-height: 30px;;
 	border:2px solid #aaa;
 	border-radius: 50%;
+	z-index: 9999;
 }
 .fixed-circle .mui-icon{
 	font-size: 30px;

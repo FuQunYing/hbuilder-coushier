@@ -7,6 +7,13 @@ mui('body').on('tap','.mui-bar a',function(){
 		document.location.href=this.href;	
 	}
 });
+ //初始化单页view
+var viewApi = mui('#app').view({
+	defaultPage: '#count'
+});
+mui('.mui-scroll-wrapper').scroll({
+	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+});
 //日期
 $(".time").focus(function() {
 	var start=$(this);
@@ -25,33 +32,3 @@ $(".time").blur(function() {
 $("body").on('swiperight', function(){
 	document.location.href="notify.html";
 });*/
-(function($, doc) {
-	$.init();
-	var settings = app.getSettings();
-	var account = doc.getElementById('account');
-	//
-	window.addEventListener('show', function() {
-		var state = app.getState();
-		account.innerText = state.account;
-	}, false);
-	$.plusReady(function() {
-		var settingPage = $.preload({
-			"id": 'setting',
-			"url": 'setting.html'
-		});
-		$.oldBack = mui.back;
-		var backButtonPress = 0;
-		$.back = function(event) {
-			backButtonPress++;
-			if (backButtonPress > 1) {
-				plus.runtime.quit();
-			} else {
-				plus.nativeUI.toast('再按一次退出应用');
-			}
-			setTimeout(function() {
-				backButtonPress = 0;
-			}, 1000);
-			return false;
-		};
-	});
-}(mui, document));

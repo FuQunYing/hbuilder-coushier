@@ -6,186 +6,217 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/view.css"/>
+		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/count.css" />
 	</head>
 	<body>
-		<header class="mui-bar mui-bar-nav bg-blue" style="padding-right: 15px;">
-			<h1 class="mui-title white">对账</h1>
-		</header>
-		<div class="mui-content">
-			<div class="mui-content-padded">
-				<ul class="mui-table-view">
-				    <li class="mui-table-view-cell mui-collapse">
-				        <a class="mui-navigate-right title" href="#">海贝管理系统</a>
-						<hr />
-				        <div class="mui-collapse-content">
-				            <p>内容待定</p>
-				        </div>
-				    </li>
-				</ul>
-				<div class="mui-card">
-					<!--页眉，放置标题-->
-					<div class="mui-card-header gray card-tit">商户交易详情</div>
-					<!--内容区-->
-					<div class="mui-card-content">
-						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备号</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
-						</div>
-						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备备注</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
-						</div>
-						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle">收银员</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
-						</div>
-						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle">海贝操作员</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
-						</div>
-						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle">商户单号</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
-						</div>
-						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备类型</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<select name="">
-									<option value="">选择设备类型...</option>
-									<option value="">海贝</option>
-									<option value="">贝芯</option>
-									<option value="">贝屏</option>
-									<option value="">软海贝</option>
-									<option value="">一码付</option>
-								</select>
-							</div>
-						</div>
-						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle">钱包类型</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<select name="">
-									<option value="">选择钱包类型...</option>
-									<option value="">微信支付</option>
-									<option value="">支付宝支付</option>
-									<option value="">百度钱包</option>
-									<option value="">手机QQ钱包</option>
-									<option value="">京东钱包</option>
-								</select>
-							</div>
-						</div>
-						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle-time">交易时间</div>
-							<div class="mui-col-xs-8">
-								<div  class="mui-col-sm-12 mui-col-xs-12">
-									<input type="text" placeholder="开始时间" onfocus="(this.type='date')" class="time"/>
-								</div>
-								<div  class="mui-col-sm-12 mui-col-xs-12">
-									<input type="text" placeholder="结束时间" onfocus="(this.type='date')" class="time"/>
-								</div>
-							</div>
-						</div>
-						<div class="mui-row center">
-							<button class="mui-btn mui-btn-success mui-col-xs-3 right left">查找</button>
-							<button class="mui-btn mui-btn-danger mui-col-xs-3 right">清除</button>
-							<button class="mui-btn mui-btn-primary mui-col-xs-3">下载</button>
-						</div>						
-					</div>
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">
+				<div class="mui-navbar  bg-blue">
 				</div>
-				<div class="mui-card">
-					<div class="mui-card-header gray card-tit">
-						商户交易详情
-					</div>
-					<div class="mui-card-content">
-						<ul class="mui-table-view">
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">设备类型：</strong>
-									<span class="mui-col-xs-8">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">设备号：</strong>
-									<span class="mui-col-sm-8">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">设备备注：</strong>
-									<span class="mui-col-xs-5">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">收银员：</strong>
-									<span class="mui-col-xs-5">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">海贝操作员：</strong>
-									<span class="mui-col-xs-8">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">输入金额：</strong>
-									<span class="mui-col-xs-4">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">币种：</strong>
-									<span class="mui-col-xs-8">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">交易时间：</strong>
-									<span class="mui-col-xs-8">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">商户单号：</strong>
-									<span class="mui-col-xs-8">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">钱包类型：</strong>
-									<span class="mui-col-xs-8">数据</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell">
-								<p class="mui-row">
-									<strong class="mui-col-xs-4">操作：</strong>
-									<span class="mui-col-xs-8">操作</span>
-								</p>
-							</li>
-							<li class="mui-table-view-cell"></li>
-						</ul>
-					</div>
-					<div class="mui-card-footer">
-						<ul class="mui-table-view">
-							<li class="mui-table-view-cell center black">No records found to show</li>
-							<li class="mui-table-view-cell mui-row">
-								<span class="mui-col-xs-3 center">总设备数量</span>
-								<span class="mui-col-xs-6 center">总交易金额（币种为输入金额币种）</span>
-								<span class="mui-col-xs-3 center">总交易笔数</span>
-							</li>
-							<li class="mui-table-view-cell mui-row">
-								<span class="mui-col-xs-3 center">0</span>
-								<span class="mui-col-xs-6 center">0</span>
-								<span class="mui-col-xs-3 center">0</span>
-							</li>
-						</ul>
-					</div>
+				<div class="mui-pages">
 				</div>
-				
+			</div>
+		</div>
+		
+		<div id="count" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<h1 class="mui-center mui-title white">对账</h1>
+			</div>
+			
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper nobottom">
+					<div class="mui-scroll">
+						<ul class="mui-table-view">
+						    <li class="mui-table-view-cell mui-collapse">
+						        <a class="mui-navigate-right title" href="#">海贝管理系统</a>
+								<hr />
+						        <div class="mui-collapse-content">
+						            <ul class="mui-table-view">
+									    <li class="mui-table-view-cell">
+									    	<a href="#refundorder" class="gray">退款订单</a>
+									    </li>
+									    <li class="mui-table-view-cell">交易汇总</li>
+									    <li class="mui-table-view-cell">我的下载</li>
+									</ul>
+						        </div>
+						    </li>
+						</ul>
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<div class="mui-card-header gray card-tit">商户交易详情</div>
+							<!--内容区-->
+							<div class="mui-card-content">
+								<div  class="mui-row">
+									<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备号</div>
+									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+								</div>
+								<div  class="mui-row">
+									<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备备注</div>
+									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+								</div>
+								<div  class="mui-row">
+									<div  class="mui-col-sm-4 mui-col-xs-4 middle">收银员</div>
+									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+								</div>
+								<div  class="mui-row">
+									<div  class="mui-col-sm-4 mui-col-xs-4 middle">海贝操作员</div>
+									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+								</div>
+								<div  class="mui-row">
+									<div  class="mui-col-sm-4 mui-col-xs-4 middle">商户单号</div>
+									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+								</div>
+								<div  class="mui-row">
+									<div  class="mui-col-sm-4 mui-col-xs-4 middle">设备类型</div>
+									<div  class="mui-col-sm-8 mui-col-xs-8">
+										<select name="">
+											<option value="">选择设备类型...</option>
+											<option value="">海贝</option>
+											<option value="">贝芯</option>
+											<option value="">贝屏</option>
+											<option value="">软海贝</option>
+											<option value="">一码付</option>
+										</select>
+									</div>
+								</div>
+								<div  class="mui-row">
+									<div  class="mui-col-sm-4 mui-col-xs-4 middle">钱包类型</div>
+									<div  class="mui-col-sm-8 mui-col-xs-8">
+										<select name="">
+											<option value="">选择钱包类型...</option>
+											<option value="">微信支付</option>
+											<option value="">支付宝支付</option>
+											<option value="">百度钱包</option>
+											<option value="">手机QQ钱包</option>
+											<option value="">京东钱包</option>
+										</select>
+									</div>
+								</div>
+								<div  class="mui-row">
+									<div  class="mui-col-sm-4 mui-col-xs-4 middle-time">交易时间</div>
+									<div class="mui-col-xs-8">
+										<div  class="mui-col-sm-12 mui-col-xs-12">
+											<input type="text" placeholder="开始时间" onfocus="(this.type='date')" class="time"/>
+										</div>
+										<div  class="mui-col-sm-12 mui-col-xs-12">
+											<input type="text" placeholder="结束时间" onfocus="(this.type='date')" class="time"/>
+										</div>
+									</div>
+								</div>
+								<div class="mui-row center">
+									<button class="mui-btn mui-btn-success mui-col-xs-3 right left">查找</button>
+									<button class="mui-btn mui-btn-danger mui-col-xs-3 right">清除</button>
+									<button class="mui-btn mui-btn-primary mui-col-xs-3">下载</button>
+								</div>						
+							</div>
+						</div>
+						<div class="mui-card">
+							<div class="mui-card-header gray card-tit">
+								商户交易详情
+							</div>
+							<div class="mui-card-content">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">设备类型：</strong>
+											<span class="mui-col-xs-8">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">设备号：</strong>
+											<span class="mui-col-sm-8">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">设备备注：</strong>
+											<span class="mui-col-xs-5">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">收银员：</strong>
+											<span class="mui-col-xs-5">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">海贝操作员：</strong>
+											<span class="mui-col-xs-8">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">输入金额：</strong>
+											<span class="mui-col-xs-4">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">币种：</strong>
+											<span class="mui-col-xs-8">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">交易时间：</strong>
+											<span class="mui-col-xs-8">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">商户单号：</strong>
+											<span class="mui-col-xs-8">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">钱包类型：</strong>
+											<span class="mui-col-xs-8">数据</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell">
+										<p class="mui-row">
+											<strong class="mui-col-xs-4">操作：</strong>
+											<span class="mui-col-xs-8">操作</span>
+										</p>
+									</li>
+									<li class="mui-table-view-cell"></li>
+								</ul>
+							</div>
+							<div class="mui-card-footer">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell center black">No records found to show</li>
+									<li class="mui-table-view-cell mui-row">
+										<span class="mui-col-xs-3 center">总设备数量</span>
+										<span class="mui-col-xs-6 center">总交易金额（币种为输入金额币种）</span>
+										<span class="mui-col-xs-3 center">总交易笔数</span>
+									</li>
+									<li class="mui-table-view-cell mui-row">
+										<span class="mui-col-xs-3 center">0</span>
+										<span class="mui-col-xs-6 center">0</span>
+										<span class="mui-col-xs-3 center">0</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="copyright">
+			            	<span>&copy; 2016 HiPay</span>
+			            	<img src="images/bottomlogo.png"/>
+			            </div>
+			            
+	               </div>
+				</div>
+				<div class="fixed-circle ishide" id="totop">
+					<a href="#totop">
+						<span class="mui-icon mui-icon-arrowthinup"></span>
+					</a>
+				</div>
 				<!--底部tab start-->
                 <nav class="mui-bar mui-bar-tab">
                     <a class="mui-tab-item" href="notify.html">
@@ -203,19 +234,41 @@
                 </nav>
                 <!--底部tab end-->
 			</div>
-			<!--公用-->
-			<div class="copyright">
-            	<span>&copy; 2016 HiPay</span>
-            	<img src="images/bottomlogo.png"/>
-            </div>
-			<div class="fixed-circle" id="totop">
-				<a href="#totop">
-					<span class="mui-icon mui-icon-arrowthinup"></span>
-				</a>
+		</div>
+		<!--退款订单-->
+		<div id="refundorder" class="mui-page refundorder">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav white"></span>
+				</button>
+				<h1 class="mui-center mui-title white">退款订单</h1>
+			</div>
+			<div class="mui-page-content">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-collapse">
+				        <a class="mui-navigate-right title" href="#">海贝管理系统</a>
+				        <hr/>
+				        <div class="mui-collapse-content">
+				            <p>内容待定</p>
+				        </div>
+				    </li>
+				</ul>
+				
+				<div class="copyright">
+	            	<span>&copy; 2016 HiPay</span>
+	            	<img src="images/bottomlogo.png"/>
+	            </div>
+				<div class="fixed-circle" id="totop">
+					<a href="#totop">
+						<span class="mui-icon mui-icon-arrowthinup"></span>
+					</a>
+				</div>
 			</div>
 		</div>
+		
 		<script src="js/mui.min.js"></script>
-		<script src="libs/easymob-webim-sdk/jquery-1.11.1.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/mui.view.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/count.js"></script>
 	</body>

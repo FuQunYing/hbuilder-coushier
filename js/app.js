@@ -4,11 +4,39 @@ if($(".fixed-circle").length){
 	console.log($(".fixed-circle"));
 	var gototop = $(".fixed-circle");
 	var $docu = $(document);
+	var scrollnum;
+	var ismui = true;
 	gototopfn=function() {
-		if($docu.scrollTop()<65){
-			gototop.fadeOut();
-		} else {
-			gototop.fadeIn();
+		$(window).scroll(function(){
+			if($(".mui-scroll")[0].style.webkitTransform){
+				var muiScroll=Number($(".mui-scroll")[0].style.webkitTransform.split(',')[1].slice(0,-2));
+			}
+			console.log($docu.scrollTop(),muiScroll);
+			if(muiScroll !== 0 && $docu.scrollTop() === 0){
+				scrollnum = muiScroll;
+			} else {
+				scrollnum = $docu.scrollTop();
+			}
+		})
+		console.log(scrollnum);
+		if(scrollnum > 0 ){
+			ismui = false;
+			if(scrollnum<65){
+				console.log('隐藏');
+				gototop.fadeOut();
+			} else {
+				console.log('显示');
+				gototop.fadeIn();
+			}
+		} else if (scrollnum < 0){
+			ismui=true;
+			if (scrollnum > -65) {
+				console.log('隐藏');
+				gototop.fadeOut();
+			} else {
+				console.log('显示');
+				gototop.fadeIn();
+			}
 		}
 	};
 	var gototop_timer;
@@ -17,14 +45,19 @@ if($(".fixed-circle").length){
 		gototop_timer = setTimeout(gototopfn, 300)
 	});
 	gototop.on('tap', function() {
-		$("html,body").animate({
-			scrollTop:0
-		},{
-			'duration':'fast',
-			'complete':function(){
-				gototop.delay(100).fadeOut();
-			}
-		});
+		if(ismui){
+			mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);//100毫秒滚动到顶
+			gototop.delay(100).fadeOut();
+		} else{
+			$("html,body").animate({
+				scrollTop:0
+			},{
+				'duration':'fast',
+				'complete':function(){
+					gototop.delay(100).fadeOut();
+				}
+			});
+		}
 		return false;
 	});
 	gototopfn();
@@ -71,6 +104,5 @@ var getCookie = function(name,value,options) {
             }
         }
         return cookieValue;
-
     }
 };
