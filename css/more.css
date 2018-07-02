@@ -26,6 +26,7 @@
 	width: 50px;
 	float: left;
 	margin: auto 20px;
+	border-radius: 50%;
 }
 .lowercase{
 	font-size: 16px;
