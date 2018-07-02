@@ -11,30 +11,24 @@ if($(".fixed-circle").length){
 			if($(".mui-scroll")[0].style.webkitTransform){
 				var muiScroll=Number($(".mui-scroll")[0].style.webkitTransform.split(',')[1].slice(0,-2));
 			}
-			console.log($docu.scrollTop(),muiScroll);
 			if(muiScroll !== 0 && $docu.scrollTop() === 0){
 				scrollnum = muiScroll;
 			} else {
 				scrollnum = $docu.scrollTop();
 			}
 		})
-		console.log(scrollnum);
 		if(scrollnum > 0 ){
 			ismui = false;
 			if(scrollnum<65){
-				console.log('隐藏');
 				gototop.fadeOut();
 			} else {
-				console.log('显示');
 				gototop.fadeIn();
 			}
 		} else if (scrollnum < 0){
 			ismui=true;
 			if (scrollnum > -65) {
-				console.log('隐藏');
 				gototop.fadeOut();
 			} else {
-				console.log('显示');
 				gototop.fadeIn();
 			}
 		}

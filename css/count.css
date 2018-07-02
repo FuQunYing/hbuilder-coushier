@@ -56,3 +56,6 @@ select{
 .ishide{
 	display: none;
 }
+.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell{
+	padding-left: 25px;;
+}
