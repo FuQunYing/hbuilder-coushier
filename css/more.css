@@ -14,13 +14,6 @@
 .mui-card{
 	margin: 5px;
 }
-.card-tit span{
-	font-size: 12px;
-	color: #aaa;
-}
-.center{
-	text-align: center;
-}
 .userinfo{
 	padding: 10px;
 	height: 70px;
@@ -107,38 +100,12 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 #info .fixed-circle{
 	bottom: 10px;
 }
-.sub-tit{
-	display: inline-block;
-	font-size: 14px;
-	color: #6d6d6d;
-	font-weight: bold;
-	margin: 10px;
-	padding-left: 10px;
-	line-height: 20px;
-}
-.sub-tit .mui-icon{
-	font-size: 16px;
-	font-weight: bold;
-	vertical-align: bottom;
-}
-#cashpage .content,#cashierpage .content{
-	padding: 20px;
-}
-.activted{
-	display: inline-block;
-	height:30px;
-	line-height: 30px;
-	color: #fff;
-	background-color: #36c6d3;
-	text-align: center;
-	border-radius: 3px;
-}
-.mui-page .mui-table-view:last-child{
-	margin-bottom: 0;
-}
 #cashierpage .content .mui-table-view-cell.mui-collapse .mui-collapse-content{
 	padding: 0;
 }
 #cashierpage .mui-collapse-content li p{
 	font-size: 13px;
+}
+#cashpage .content,#cashierpage .content{
+	padding: 20px;
 }

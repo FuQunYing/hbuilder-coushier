@@ -51,7 +51,7 @@
 						</ul>
 						<div class="mui-card">
 							<!--页眉，放置标题-->
-							<div class="mui-card-header gray card-tit">商户交易详情</div>
+							<div class="mui-card-header gray card-tit">商户交易详情</div><hr />
 							<!--内容区-->
 							<div class="mui-card-content">
 								<div  class="mui-row">
@@ -104,10 +104,10 @@
 									<div  class="mui-col-sm-4 mui-col-xs-4 middle-time">交易时间</div>
 									<div class="mui-col-xs-8">
 										<div  class="mui-col-sm-12 mui-col-xs-12">
-											<input type="text" placeholder="开始时间" onfocus="(this.type='date')" class="time"/>
+											<input type="text" placeholder="From" onfocus="(this.type='date')" class="time"/>
 										</div>
 										<div  class="mui-col-sm-12 mui-col-xs-12">
-											<input type="text" placeholder="结束时间" onfocus="(this.type='date')" class="time"/>
+											<input type="text" placeholder="To" onfocus="(this.type='date')" class="time"/>
 										</div>
 									</div>
 								</div>
@@ -120,8 +120,9 @@
 						</div>
 						<div class="mui-card">
 							<div class="mui-card-header gray card-tit">
-								商户交易详情
+								<span class="mui-icon mui-icon-list list-icon"></span>商户交易详情列表
 							</div>
+							<hr />
 							<div class="mui-card-content">
 								<ul class="mui-table-view">
 									<li class="mui-table-view-cell">
@@ -190,7 +191,6 @@
 											<span class="mui-col-xs-8">操作</span>
 										</p>
 									</li>
-									<li class="mui-table-view-cell"></li>
 								</ul>
 							</div>
 							<div class="mui-card-footer">
@@ -256,7 +256,202 @@
 				        </div>
 				    </li>
 				</ul>
-				
+				<div class="mui-card">
+					<div class="mui-card-header gray card-tit">商户退款查询</div><hr />
+					<div class="mui-card-content">
+						<div  class="mui-row">
+							<div  class="mui-col-sm-5 mui-col-xs-5 middle-time">退款申请时间</div>
+							<div class="mui-col-xs-7">
+								<div  class="mui-col-sm-12 mui-col-xs-12">
+									<input type="text" placeholder="From" onfocus="(this.type='date')" class="time"/>
+								</div>
+								<div  class="mui-col-sm-12 mui-col-xs-12">
+									<input type="text" placeholder="To" onfocus="(this.type='date')" class="time"/>
+								</div>
+							</div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-5 mui-col-xs-5 middle-time">退款单号</div>
+							<div  class="mui-col-sm-7 mui-col-xs-7">
+								<div class="mui-col-xs-12">
+									<select name="">
+										<option value="">退款商户单号</option>
+										<option value="">退款交易单号</option>										
+									</select>
+								</div>
+								<div class="mui-col-xs-12">
+									<input type="text" />
+								</div>
+							</div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-5 mui-col-xs-5 middle-time">交易单号</div>
+							<div  class="mui-col-sm-7 mui-col-xs-7">
+								<div class="mui-col-xs-12">
+									<select name="">
+										<option value="">交易单号</option>
+										<option value="">商户单号</option>										
+									</select>
+								</div>
+								<div class="mui-col-xs-12">
+									<input type="text" />
+								</div>
+							</div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-5 mui-col-xs-5 middle">退款状态</div>
+							<div  class="mui-col-sm-7 mui-col-xs-7">
+								<select name="">
+									<option value="">全部</option>
+									<option value="">已申请</option>
+									<option value="">受理成功</option>
+									<option value="">受理失败</option>
+									<option value="">退款成功</option>
+									<option value="">退款失败</option>
+								</select>
+							</div>
+						</div>
+						<div class="mui-row">
+							<div class="mui-col-xs-5 middle">设备号</div>
+							<div class="mui-col-xs-7">
+								<input type="text" />
+							</div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-sm-5 mui-col-xs-5 middle">退款入口</div>
+							<div  class="mui-col-sm-7 mui-col-xs-7">
+								<select name="">
+									<option value="">全部</option>
+									<option value="">Hipay Mgt</option>
+									<option value="">ZTC</option>
+									<option value="">Hipay Device</option>
+								</select>
+							</div>
+						</div>
+						<div class="mui-row center">
+							<button class="mui-btn mui-btn-success mui-col-xs-3 right left">查找</button>
+							<button class="mui-btn mui-btn-danger mui-col-xs-3 right">清除</button>
+							<button class="mui-btn mui-btn-primary mui-col-xs-3">下载</button>
+						</div>						
+					</div>
+				</div>
+				<div class="mui-card">
+					<div class="mui-card-header gray card-tit">
+						<span class="mui-icon mui-icon-list list-icon"></span>商户退款列表
+					</div>
+					<hr />
+					<div class="mui-card-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款申请时间：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款商户单号：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款交易单号：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">交易单号：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">商户单号：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">设备号：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">申请退款金额：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">实退金额：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">币种：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款入口：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款完成时间：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款状态：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款失败原因：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-card-footer">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell center black">No records found to show</li>
+							<li class="mui-table-view-cell mui-row">
+								<strong class="mui-col-xs-6 center">退款汇总</strong>
+								<strong class="mui-col-xs-6 center">退款笔数</strong>
+							</li>
+							<li class="mui-table-view-cell mui-row">
+								<span class="mui-col-xs-6 center">申请中</span>
+								<span class="mui-col-xs-6 center">0</span>
+							</li>
+							<li class="mui-table-view-cell mui-row">
+								<span class="mui-col-xs-6 center">受理成功</span>
+								<span class="mui-col-xs-6 center">0</span>
+							</li>
+							<li class="mui-table-view-cell mui-row">
+								<span class="mui-col-xs-6 center">受理失败</span>
+								<span class="mui-col-xs-6 center">0</span>
+							</li>
+							<li class="mui-table-view-cell mui-row">
+								<span class="mui-col-xs-6 center">退款成功</span>
+								<span class="mui-col-xs-6 center">0</span>
+							</li>
+							<li class="mui-table-view-cell mui-row">
+								<span class="mui-col-xs-6 center">退款失败</span>
+								<span class="mui-col-xs-6 center">0</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<div class="copyright">
 	            	<span>&copy; 2016 HiPay</span>
 	            	<img src="images/bottomlogo.png"/>
@@ -286,7 +481,112 @@
 				        </div>
 				    </li>
 				</ul>
-				
+				<div class="mui-card">
+					<div class="mui-card-header gray card-tit">交易数据汇总</div><hr />
+					<div class="mui-card-content">
+						<div  class="mui-row">
+							<div  class="mui-col-sm-4 mui-col-xs-4 middle-time">交易时间</div>
+							<div class="mui-col-xs-8">
+								<div  class="mui-col-sm-12 mui-col-xs-12">
+									<input type="text" placeholder="From" onfocus="(this.type='date')" class="time"/>
+								</div>
+								<div  class="mui-col-sm-12 mui-col-xs-12">
+									<input type="text" placeholder="To" onfocus="(this.type='date')" class="time"/>
+								</div>
+							</div>
+						</div>
+						<div class="mui-row center">
+							<button class="mui-btn mui-btn-success mui-col-xs-3 right left">查找</button>
+							<button class="mui-btn mui-btn-danger mui-col-xs-3 right">清除</button>
+							<button class="mui-btn mui-btn-primary mui-col-xs-3">下载</button>
+						</div>						
+					</div>
+				</div>
+				<div class="mui-card">
+					<div class="mui-card-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">设备号：</strong>
+									<span class="mui-col-sm-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">设备备注：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">交易金额汇总：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">交易笔数汇总：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款金额汇总：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">退款 笔数汇总：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">净收金额汇总：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5">币种：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-card-footer">
+						<div class="center">
+							<ul class="mui-pagination">
+							    <li class="mui-disabled">
+							        <span> &laquo; </span>
+							    </li>
+							    <li class="mui-active">
+							        <a href="#">1</a>
+							    </li>
+							    <li>
+							        <a href="#">2</a>
+							    </li>
+							    <li>
+							        <a href="#">&raquo;</a>
+							    </li>
+							</ul>
+							<div class="mui-row" style="width: 80%; margin: 10px auto;">
+								<div class="mui-col-xs-1 middle">共</div>
+								<div class="mui-col-xs-2 middle">2</div>
+								<div class="mui-col-xs-1 middle">页，</div>
+								<div class="mui-col-xs-2 middle">跳到</div>
+								<div class="mui-col-xs-3">
+									<input type="number" />
+								</div>
+								<div class="mui-col-xs-1 middle">页</div>
+								<div class="mui-col-xs-2 middle">
+									<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined" style="padding: 5px;">GO</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="copyright">
 	            	<span>&copy; 2016 HiPay</span>
 	            	<img src="images/bottomlogo.png"/>
@@ -316,7 +616,26 @@
 				        </div>
 				    </li>
 				</ul>
-				
+				<div class="mui-card">
+					<div class="mui-card-header gray card-tit">我的下载 <span>交易下载任务</span></div>
+					<div class="mui-card-content">
+						<p class="sub-tit"><span class="mui-icon mui-icon-list"></span> <span>任务列表</span></p>
+						<hr />
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-row">
+								<strong class="mui-col-xs-6 center">下载时间</strong>
+								<strong class="mui-col-xs-6 center">文件名</strong>
+							</li>
+							<li class="mui-table-view-cell mui-row">
+								<span class="mui-col-xs-6 center">数据</span>
+								<span class="mui-col-xs-6 center">数据</span>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-card-footer center">
+						No records found to show
+					</div>
+				</div>
 				<div class="copyright">
 	            	<span>&copy; 2016 HiPay</span>
 	            	<img src="images/bottomlogo.png"/>

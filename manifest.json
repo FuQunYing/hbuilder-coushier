@@ -265,7 +265,8 @@
 				"resources": [],
 				"refer": [
 					"more.html",
-					"count.html"
+					"count.html",
+					"login.html"
 				],
 				"priority": 0
 			},

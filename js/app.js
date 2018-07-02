@@ -18,6 +18,9 @@ if($(".fixed-circle").length){
 			}
 		})
 		console.log(scrollnum);
+		if(scrollnum == undefined || scrollnum == 0){
+			gototop.fadeOut();
+		}
 		if(scrollnum > 0 ){
 			ismui = false;
 			if(scrollnum<65){
@@ -105,3 +108,23 @@ var getCookie = function(name,value,options) {
         return cookieValue;
     }
 };
+/*(function($, doc) {
+	$.init();
+	$.plusReady(function() {
+		$.oldBack = mui.back;
+		var backButtonPress = 0;
+		$.back = function(event) {
+			console.log('返回1');
+			backButtonPress++;
+			if (backButtonPress > 1) {
+				plus.runtime.quit();
+			} else {
+				plus.nativeUI.toast('再按一次退出应用');
+			}
+			setTimeout(function() {
+				backButtonPress = 0;
+			}, 1000);
+			return false;
+		};
+	});
+}(mui, document));*/

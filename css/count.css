@@ -37,9 +37,6 @@ hr{
 .left{
 	margin-left: 33px;;
 }
-.center{
-	text-align: center;
-}
 select{
 	border: 1px solid #ddd;
 }
@@ -58,4 +55,8 @@ select{
 }
 .mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell{
 	padding-left: 25px;;
+}
+.list-icon{
+	vertical-align: middle;
+	padding: 0 10px;
 }

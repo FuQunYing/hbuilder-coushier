@@ -49,8 +49,8 @@
 			</div>
 		</div>
 		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/app.js"></script>
-		<script src="libs/easymob-webim-sdk/jquery-1.11.1.js"></script>
 		<script>
 			mui.init();
 			console.log(1);
@@ -63,26 +63,7 @@
 			/*$("body").on('swipeleft', function(){
 				document.location.href="count.html";
 			});*/
-			(function($, doc) {
-				$.init();
-				var settings = app.getSettings();
-				$.plusReady(function() {
-					$.oldBack = mui.back;
-					var backButtonPress = 0;
-					$.back = function(event) {
-						backButtonPress++;
-						if (backButtonPress > 1) {
-							plus.runtime.quit();
-						} else {
-							plus.nativeUI.toast('再按一次退出应用');
-						}
-						setTimeout(function() {
-							backButtonPress = 0;
-						}, 1000);
-						return false;
-					};
-				});
-			}(mui, document));
+			
 		</script>
 	</body>
 

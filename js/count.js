@@ -13,6 +13,9 @@ var viewApi = mui('#countmain').view({
 var oldBack=mui.back;
 mui.back=function(){
 	if(viewApi.canBack()){
+		if($(".title").parent().hasClass('mui-active')){
+			$(".title").parent().removeClass('mui-active');
+		}
 		viewApi.back();
 	} else {
 		oldBack();

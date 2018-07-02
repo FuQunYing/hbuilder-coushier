@@ -144,27 +144,26 @@
 			mui('body').on('tap','#reg',function(){
 				document.location.href="reg.html";
 			});
-			
-			 //自动登录
-                $("#autoLogin").on('toggle', function (event) {
-                    setTimeout(function () {
-                        if (event.detail.isActive) { // 是否选中
-                            window.localStorage.setItem("autologin", "true")
-                           //设置 登录账户密码。
-                            window.localStorage.setItem("uname", $("#account").val());
-                            window.localStorage.setItem("pwd", $("#password").val());
-                        } else {
-                            window.localStorage.setItem("autologin", "false")
-                        }
-                    }, 50);
-                }, false);
+			$("#autoLogin").on('tap', function(){
+				console.log('click');
+				var isActive = $('#autoLogin').hasClass('mui-active');
+				console.log(isActive);
+				if(isActive){
+					 localStorage.setItem("autologin", "true")
+	               //设置 登录账户密码。
+	                localStorage.setItem("uname", $("#account").val());
+	                localStorage.setItem("pwd", $("#password").val());
+				} else {
+					localStorage.setItem("autologin", "false")
+				}
+			})
 			//页面启动 
 			mui.plusReady(function () {
                 /*var name = window.localStorage.getItem("US_CODE");
                 var US_PWD=window.localStorage.getItem("US_PWD");*/
 				//检测是否启用自动登录
-                if (window.localStorage.getItem("autologin") == "true") {
-                    mui.toast('为您自动登录',{type:'div'});
+                if (localStorage.getItem("autologin") == "true") {
+                    mui.toast('已为您自动登录',{type:'div'});
 					mui.openWindow({
 						url: 'notify.html',
 						id: 'notify'

@@ -12,7 +12,7 @@ mui('body').on('tap','.mui-bar a',function(){
 });*/
 
  //初始化单页view
-var viewApi = mui('#moremain').view({
+var viewApi = mui('#app').view({
 	defaultPage: '#more'
 });
 
