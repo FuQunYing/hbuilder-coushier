@@ -17,18 +17,23 @@ if($(".fixed-circle").length){
 				scrollnum = $docu.scrollTop();
 			}
 		})
+		console.log(scrollnum);
 		if(scrollnum > 0 ){
 			ismui = false;
 			if(scrollnum<65){
+				console.log('隐藏');
 				gototop.fadeOut();
 			} else {
+				console.log('显示');
 				gototop.fadeIn();
 			}
 		} else if (scrollnum < 0){
 			ismui=true;
 			if (scrollnum > -65) {
+				console.log('隐藏');
 				gototop.fadeOut();
 			} else {
+				console.log('显示');
 				gototop.fadeIn();
 			}
 		}

@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<!--页面主结构开始-->
-		<div id="app" class="mui-views">
+		<div id="countmain" class="mui-views">
 			<div class="mui-view">
 				<div class="mui-navbar  bg-blue">
 				</div>
@@ -37,13 +37,13 @@
 						        <div class="mui-collapse-content">
 						            <ul class="mui-table-view">
 									    <li class="mui-table-view-cell">
-									    	<a href="#refundorder" style="color: #8f8f94;">退款订单</a>
+									    	<a href="#refundorder"   class="mui-navigate-right" style="color: #8f8f94;">退款订单</a>
 									    </li>
 									    <li class="mui-table-view-cell">
-									    	<a href="tradesummary" style="color: #8f8f94;">交易汇总</a>
+									    	<a href="#tradesummary"  class="mui-navigate-right" style="color: #8f8f94;">交易汇总</a>
 									    </li>
 									    <li class="mui-table-view-cell">
-									    	<a href="#mydownload" style="color: #8F8F94;">我的下载</a>
+									    	<a href="#mydownload"  class="mui-navigate-right" style="color: #8F8F94;">我的下载</a>
 									    </li>
 									</ul>
 						        </div>
@@ -212,8 +212,7 @@
 						<div class="copyright">
 			            	<span>&copy; 2016 HiPay</span>
 			            	<img src="images/bottomlogo.png"/>
-			            </div>
-			            
+			           </div>
 	               </div>
 				</div>
 				<div class="fixed-circle ishide" id="totop">
@@ -240,12 +239,72 @@
 			</div>
 		</div>
 		<!--退款订单-->
-		<div id="refundorder" class="mui-page refundorder">
+		<div id="refundorder" class="mui-page">
 			<div class="mui-navbar-inner mui-bar mui-bar-nav">
 				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
 					<span class="mui-icon mui-icon-left-nav white"></span>
 				</button>
 				<h1 class="mui-center mui-title white">退款订单</h1>
+			</div>
+			<div class="mui-page-content">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-collapse">
+				        <a class="mui-navigate-right title" href="#">海贝管理系统</a>
+				        <hr/>
+				        <div class="mui-collapse-content">
+				            <p>内容待定</p>
+				        </div>
+				    </li>
+				</ul>
+				
+				<div class="copyright">
+	            	<span>&copy; 2016 HiPay</span>
+	            	<img src="images/bottomlogo.png"/>
+	            </div>
+				<div class="fixed-circle" id="totop">
+					<a href="#totop">
+						<span class="mui-icon mui-icon-arrowthinup"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--交易汇总-->
+		<div id="tradesummary" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav white"></span>
+				</button>
+				<h1 class="mui-center mui-title white">交易汇总</h1>
+			</div>
+			<div class="mui-page-content">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-collapse">
+				        <a class="mui-navigate-right title" href="#">海贝管理系统</a>
+				        <hr/>
+				        <div class="mui-collapse-content">
+				            <p>内容待定</p>
+				        </div>
+				    </li>
+				</ul>
+				
+				<div class="copyright">
+	            	<span>&copy; 2016 HiPay</span>
+	            	<img src="images/bottomlogo.png"/>
+	            </div>
+				<div class="fixed-circle" id="totop">
+					<a href="#totop">
+						<span class="mui-icon mui-icon-arrowthinup"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--我的下载-->
+		<div id="mydownload" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav white"></span>
+				</button>
+				<h1 class="mui-center mui-title white">我的下载</h1>
 			</div>
 			<div class="mui-page-content">
 				<ul class="mui-table-view">

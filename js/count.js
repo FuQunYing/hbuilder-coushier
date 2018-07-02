@@ -1,5 +1,4 @@
 mui.init();
-console.log(2);
 $("body").css("min-height",screen.availHeight-50);
 mui('body').on('tap','.mui-bar a',function(){
 	if (this.href.indexOf("#") === -1){
@@ -8,9 +7,17 @@ mui('body').on('tap','.mui-bar a',function(){
 	}
 });
  //初始化单页view
-var viewApi = mui('#app').view({
+var viewApi = mui('#countmain').view({
 	defaultPage: '#count'
 });
+var oldBack=mui.back;
+mui.back=function(){
+	if(viewApi.canBack()){
+		viewApi.back();
+	} else {
+		oldBack();
+	}
+}
 mui('.mui-scroll-wrapper').scroll({
 	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 });

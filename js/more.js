@@ -1,5 +1,4 @@
 mui.init();
-console.log(3);
 
 $("body").css("min-height",screen.availHeight-50);
 mui('body').on('tap','.mui-bar a',function(){
@@ -13,7 +12,7 @@ mui('body').on('tap','.mui-bar a',function(){
 });*/
 
  //初始化单页view
-var viewApi = mui('#app').view({
+var viewApi = mui('#moremain').view({
 	defaultPage: '#more'
 });
 

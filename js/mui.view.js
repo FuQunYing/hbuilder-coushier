@@ -74,6 +74,7 @@
 				self[event + 'Callbacks'] = {};
 				self[event] = function(page, callback) {
 					var eventCallbacks = event + 'Callbacks';
+					console.log(self[eventCallbacks][page]);
 					if (!self[eventCallbacks].hasOwnProperty(page)) {
 						self[eventCallbacks][page] = [callback];
 					} else {
