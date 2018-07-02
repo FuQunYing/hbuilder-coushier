@@ -55,6 +55,9 @@ $(".changepwd").on('tap', function(){
 	}
 })
 
+//收银点编辑弹出框
+
+
  //退出操作******************
  $("#exit").on('tap', function() {
 	mui.confirm("是否退出登录？",'',['取消','确定'], function(e) {

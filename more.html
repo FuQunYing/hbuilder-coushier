@@ -279,8 +279,8 @@
 								</li>
 								<li class="mui-table-view-cell">
 									<p class="mui-row">
-										<strong class="mui-col-xs-4">操作</strong>
-										<button class="mui-btn deviceedit">编辑</button>
+										<strong class="mui-col-xs-4 middle">操作：</strong>
+										<a id="openedit" class="mui-btn">编辑</a>
 									</p>
 								</li>
 								<li class="mui-table-view-cell center">没有找到匹配的记录</li>
@@ -316,6 +316,46 @@
 									<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined" style="padding: 5px;">GO</button>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				<!--编辑对对话框-->
+				<div id="editdevice" >
+					<div class="mui-card">
+						<div class="mui-card-header gray card-tit">设备信息</div> <hr />
+						<!--TODO:根据选择更改对话框-->
+						<div class="mui-card-content"  style="width:80%">
+							<div class="mui-row">
+								<div class="mui-col-xs-5 middle-md right">金额设置方式</div>
+								<div class="mui-col-xs-6">
+									<div class="mui-row mui-input-row mui-radio">
+										<label for="manualinput">手动输入金额</label>
+										<input type="radio"  id="manualinput"/>
+									</div>
+									<div class="mui-row mui-input-row mui-radio">
+										<label for="fixedamount">固定金额</label>
+										<input type="radio" id="fixedamounnt" selected/>
+									</div>
+								</div>
+							</div>
+							<div class="regular">
+								<div class="mui-row">
+									<div class="mui-col-xs-5 middle right">金额</div>
+									<div class="mui-col-xs-6">
+										<input type="text" value="1.00" />
+									</div>
+								</div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-5 middle right">备注</div>
+								<div class="mui-col-xs-6">
+									<input type="text" name="" id="" value="33" />
+								</div>
+							</div>
+						</div>
+						<hr />
+						<div class="mui-card-footer right">
+							<button class="mui-btn mui-btn-primary mui-btn-outlined">更新</button>
 						</div>
 					</div>
 				</div>
@@ -563,7 +603,6 @@
 			</div>
 			<div class="mui-page-content">
 				<ul class="mui-table-view lanset">
-					<!--TODO:根据点击，来判断把icon加在哪个元素上-->
 					<li class="mui-table-view-cell">auto <span></span></li>
 					<li class="mui-table-view-cell" title="en">English <span></span></li>
 					<li class="mui-table-view-cell" title="zh-CN">中文（简体）<span  class="mui-icon mui-icon-checkmarkempty"></span></li>
