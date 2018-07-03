@@ -133,3 +133,15 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 .mui-checkbox.mui-left label, .mui-radio.mui-left label{
 	padding-left: 42px;
 }
+#editdevice{
+	display: none;
+	width:90%;
+	height:50%;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 999;
+}

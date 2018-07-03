@@ -280,7 +280,7 @@
 								<li class="mui-table-view-cell">
 									<p class="mui-row">
 										<strong class="mui-col-xs-4 middle">操作：</strong>
-										<a id="openedit" class="mui-btn">编辑</a>
+										<a id="openedit" class="mui-btn">&nbsp;编&nbsp;&nbsp辑&nbsp;</a>
 									</p>
 								</li>
 								<li class="mui-table-view-cell center">没有找到匹配的记录</li>
@@ -329,34 +329,37 @@
 								<div class="mui-col-xs-5 middle-lg right">金额设置方式</div>
 								<div class="mui-col-xs-6">
 									<div class="mui-row">
-										<div class="mui-input-row mui-radio mui-left mui-col-xs-12">
+										<div class="mui-input-row mui-radio mui-left mui-col-xs-12 manual">
 											<label for="manualinput" class="lit-font">手动输入金额</label>									
 											<input type="radio" name="radio"  id="manualinput"/>
 										</div>
-										<div class="mui-input-row mui-radio mui-left mui-col-xs-12">
+										<div class="mui-input-row mui-radio mui-left mui-col-xs-12 fixed">
 											<label for="fixedamount" class="lit-font">固定金额</label>										
 											<input type="radio" name="radio" id="fixedamounnt" checked/>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="regular">
-								<div class="mui-row">
-									<div class="mui-col-xs-5 middle right">金额</div>
-									<div class="mui-col-xs-6">
-										<input type="text" value="1.00" />
+							<form class="mui-input-group">
+								<div class="regular">
+									<div class="mui-row  mui-input-row">
+										<div class="mui-col-xs-5 middle right">金额</div>
+										<div class="mui-col-xs-6">
+											<input type="text" value="1.00" class="mui-input-clear"/>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="mui-row">
-								<div class="mui-col-xs-5 middle right">备注</div>
-								<div class="mui-col-xs-6">
-									<input type="text" name="" id="" value="33" />
+								<div class="mui-row  mui-input-row">
+									<div class="mui-col-xs-5 middle right">备注</div>
+									<div class="mui-col-xs-6">
+										<input type="text" name="" id="" value="33" class="mui-input-clear"/>
+									</div>
 								</div>
-							</div>
+							</form>
 						</div>
 						<hr />
-						<div class="mui-card-footer right">
+						<div class="mui-card-footer right" style="padding-bottom: 10px;">
+							<button class="mui-btn mui-btn-gray closeedit">返回</button>
 							<button class="mui-btn mui-btn-primary mui-btn-outlined">更新</button>
 						</div>
 					</div>

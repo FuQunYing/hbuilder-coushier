@@ -56,7 +56,27 @@ $(".changepwd").on('tap', function(){
 })
 
 //收银点编辑弹出框
-
+var mask=mui.createMask(function(){
+	$("#editdevice").fadeOut();
+});
+$("#openedit").on('tap',function(){
+	$("#editdevice").fadeIn();
+	mask.show();
+})
+$(".closeedit").on('tap',function(){
+	$("#editdevice").fadeOut();
+	mask.close();
+})
+$(".manual").on('tap',function() {
+	if(!$(".regular").hasClass('hide')){
+		$(".regular").addClass('hide');
+	}
+})
+$(".fixed").on('tap',function(){
+	if($(".regular").hasClass('hide')){
+		$(".regular").removeClass('hide');
+	}
+})
 
  //退出操作******************
  $("#exit").on('tap', function() {
