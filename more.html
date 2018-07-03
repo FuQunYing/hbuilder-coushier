@@ -394,7 +394,13 @@
 				<div class="mui-card">
 					<div class="mui-card-header gray card-tit">用户管理 <span>查看和管理收银员</span></div>
 					<div class="mui-card-content">
-						<p class="sub-tit"><span class="mui-icon mui-icon-list"></span> <span>用户列表</span></p>
+						<p class="sub-tit">
+							<span class="mui-icon mui-icon-list"></span> <span>用户列表</span>
+						</p>
+						<button class="mui-btn addbtn">
+							<span class="mui-icon mui-icon-plusempty"></span>
+							添加操作人员
+						</button>
 						<!--TODO 添加操作人员-->
 						<hr />
 						<div class="content">
@@ -558,7 +564,7 @@
 					</div>
 				</div>
 				<!--添加操作人员对话框-->
-				<div id="editcashier" class="">
+				<div id="editcashier" class="editdialog">
 					<div class="mui-card">
 						<div class="mui-card-header gray card-tit">添加新的操作员</div> <hr />
 						<div class="mui-card-content"  style="width:90%">
@@ -605,7 +611,7 @@
 						<hr />
 						<div class="mui-card-footer right" style="padding-bottom: 10px;">
 							<button class="mui-btn mui-btn-gray closeedit">返回</button>
-							<button class="mui-btn mui-btn-primary mui-btn-outlined">添加</button>
+							<button class="mui-btn bg-blue white">创建</button>
 						</div>
 					</div>
 				</div>

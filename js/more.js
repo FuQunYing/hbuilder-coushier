@@ -85,6 +85,22 @@ function cashEdit(){
 cashEdit();
 
 //增加操作人员
+function addUsers(){
+	var mask=mui.createMask(function(){
+		$("#editcashier").fadeOut();
+		$('body').css('overflow','auto');
+	})
+	$('.addbtn').on('tap',function(){
+		$("#editcashier").fadeIn();
+		mask.show();
+	})
+	$(".closeedit").on('tap',function(){
+		$("#editcashier").fadeOut();
+		$('body').css('overflow','auto');
+		mask.close();
+	})
+}
+addUsers();
 
  //退出操作******************
  $("#exit").on('tap', function() {

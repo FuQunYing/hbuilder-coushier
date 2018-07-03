@@ -145,3 +145,9 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	margin: auto;
 	z-index: 999;
 }
+.addbtn{
+	float: right;
+	margin-right: 20px;
+	background-color: #32C5D2;
+	color:#fff;
+}
