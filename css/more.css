@@ -83,6 +83,9 @@
 .change p .changeinfo{
 	margin-right: 10px;
 }
+.binfo{
+	margin-right: 10px;
+}
 .info-form, .pwd-form{
 	padding: 24px;
 }
@@ -112,7 +115,9 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 }
 .right{
 	text-align: right;
-	margin-right: 20px;;
+}
+.pright{
+	padding-right: 15px;
 }
 #info .fixed-circle{
 	bottom: 10px;
@@ -150,4 +155,10 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	margin-right: 20px;
 	background-color: #32C5D2;
 	color:#fff;
+}
+.mui-input-group input.disabled-mask, .mui-input-group textarea.disabled-mask{
+	background-color: #EFEFF4;
+}
+.mui-input-group{
+	padding: 10px;
 }

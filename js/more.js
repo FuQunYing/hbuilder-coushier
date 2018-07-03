@@ -25,35 +25,56 @@ $(".lanset").on('tap', 'li', function(e){
 	$that.siblings().children('span').removeClass('mui-icon mui-icon-checkmarkempty');
 	getCookie('userLanguage',language,{expires:30,path:'/'})
 });
+
 //修改信息与修改密码切换
 $(".changeinfo").on('tap', function(){
-	if(!$(".pwd-form").hasClass("hide")){
-		$(".pwd-form").addClass("hide");
-	}
-	if($(".changepwd").hasClass("activate")){
-		$(".changepwd").removeClass("activate");
-	}
-	if(!$(".changeinfo").hasClass("activate")){
-		$(".changeinfo").addClass("activate");
-	}
-	if($(".info-form").hasClass("hide")){
-		$(".info-form").removeClass("hide");
-	}
+	formChange(0,".pwd-form",".changepwd",".info-form",".changeinfo");
 })
+
 $(".changepwd").on('tap', function(){
-	if($(".pwd-form").hasClass("hide")){
-		$(".pwd-form").removeClass("hide");
-	}
-	if(!$(".changepwd").hasClass("activate")){
-		$(".changepwd").addClass("activate");
-	}
-	if($(".changeinfo").hasClass("activate")){
-		$(".changeinfo").removeClass("activate");
-	}
-	if(!$(".info-form").hasClass("hide")){
-		$(".info-form").addClass("hide");
-	}
+	formChange(1,".pwd-form",".changepwd",".info-form",".changeinfo");
 })
+
+
+//商户信息页的切换
+$("#titchange").on('tap','.binfo',function(e){
+	formChange(0,'.cuser-form','.changeuser','.binfo-form','.binfo');
+})
+$("#titchange").on('tap','.changeuser',function(e){
+	formChange(1,'.cuser-form','.changeuser','.binfo-form','.binfo');
+})
+
+function formChange(i,hide,hidecontrol,show,showcontrol){
+	if(i == 0){
+		console.log(i);
+		if(!$(hide).hasClass("hide")){
+			$(hide).addClass("hide");
+		}
+		if($(hidecontrol).hasClass("activate")){
+			$(hidecontrol).removeClass("activate");
+		}
+		if(!$(showcontrol).hasClass("activate")){
+			$(showcontrol).addClass("activate");
+		}
+		if($(show).hasClass("hide")){
+			$(show).removeClass("hide");
+		}
+	}else if(i ==1 ){
+		console.log(i);
+		if($(hide).hasClass("hide")){
+			$(hide).removeClass("hide");
+		}
+		if(!$(hidecontrol).hasClass("activate")){
+			$(hidecontrol).addClass("activate");
+		}
+		if($(showcontrol).hasClass("activate")){
+			$(showcontrol).removeClass("activate");
+		}
+		if(!$(show).hasClass("hide")){
+			$(show).addClass("hide");
+		}
+	}
+}
 
 //收银点编辑弹出框
 function cashEdit(){
