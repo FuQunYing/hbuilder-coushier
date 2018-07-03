@@ -58,13 +58,16 @@ $(".changepwd").on('tap', function(){
 //收银点编辑弹出框
 var mask=mui.createMask(function(){
 	$("#editdevice").fadeOut();
+	$('body').css('overflow','auto');
 });
 $("#openedit").on('tap',function(){
 	$("#editdevice").fadeIn();
+	$('body').css('overflow','hidden');
 	mask.show();
 })
 $(".closeedit").on('tap',function(){
 	$("#editdevice").fadeOut();
+	$('body').css('overflow','auto');
 	mask.close();
 })
 $(".manual").on('tap',function() {
