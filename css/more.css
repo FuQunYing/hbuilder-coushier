@@ -98,6 +98,10 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	height:45px;
 	line-height: 45px;;
 }
+.mui-row .middle-lg{
+	height:80px;
+	line-height: 80px;
+}
 .confirm{
 	background-color: #36c6d3;
 	color: #fff;
@@ -121,4 +125,11 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 }
 #cashpage .content,#cashierpage .content{
 	padding: 20px;
+}
+.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	font-size: 16px;
+	line-height: 1.7;
+}
+.mui-checkbox.mui-left label, .mui-radio.mui-left label{
+	padding-left: 42px;
 }

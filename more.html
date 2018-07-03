@@ -324,17 +324,19 @@
 					<div class="mui-card">
 						<div class="mui-card-header gray card-tit">设备信息</div> <hr />
 						<!--TODO:根据选择更改对话框-->
-						<div class="mui-card-content"  style="width:80%">
+						<div class="mui-card-content"  style="width:90%">
 							<div class="mui-row">
-								<div class="mui-col-xs-5 middle-md right">金额设置方式</div>
+								<div class="mui-col-xs-5 middle-lg right">金额设置方式</div>
 								<div class="mui-col-xs-6">
-									<div class="mui-row mui-input-row mui-radio">
-										<label for="manualinput">手动输入金额</label>
-										<input type="radio"  id="manualinput"/>
-									</div>
-									<div class="mui-row mui-input-row mui-radio">
-										<label for="fixedamount">固定金额</label>
-										<input type="radio" id="fixedamounnt" selected/>
+									<div class="mui-row">
+										<div class="mui-input-row mui-radio mui-left mui-col-xs-12">
+											<label for="manualinput" class="lit-font">手动输入金额</label>									
+											<input type="radio" name="radio"  id="manualinput"/>
+										</div>
+										<div class="mui-input-row mui-radio mui-left mui-col-xs-12">
+											<label for="fixedamount" class="lit-font">固定金额</label>										
+											<input type="radio" name="radio" id="fixedamounnt" checked/>
+										</div>
 									</div>
 								</div>
 							</div>

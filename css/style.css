@@ -58,6 +58,9 @@ body {
 	background-color: #3b434c;
 	padding:10px;
 }
+.lit-font{
+	font-size: 12px;
+}
 .copyright span{
 	color: #a2abb7;
 	font-size: 12px;
