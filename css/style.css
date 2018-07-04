@@ -5,7 +5,6 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-.mui-content{height: 100%;margin-bottom: 50px;}
 .center{
 	text-align: center;
 }
@@ -120,4 +119,7 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 }
 .mui-page .mui-table-view:last-child{
 	margin-bottom: 0;
+}
+.nobottom{
+	margin-bottom:50px;
 }
