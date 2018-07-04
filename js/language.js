@@ -12,7 +12,7 @@ var getNavLanguage = function(){
 //设置默认语言类型为中文
 var i18nLanguage = "zh-CN";
 //设置网站支持的语言种类
-var webLanguage = ['zh-CN', 'zh-TW', 'en', 'ja'];
+var webLanguage = ['zh-CN', 'zh-TW', 'en'];
 /**
  * 执行页面i18n方法
  */
@@ -57,14 +57,14 @@ var execI18n = function(){
         language: i18nLanguage,
         callback: function(){//加载成功后设置显示内容
             var insertEle=$(".i18n");
-            console.log('i18n写入中',insertEle);
+//          console.log('i18n写入中',insertEle);
             insertEle.each(function() {
                 //根据i18n元素的name获取内容写入
-                console.log($(this));
+//              console.log($(this));
                 $(this).html($.i18n.prop($(this).attr('name')));
             });
-            console.log('写入完毕');
-            console.log('i18n-input写入中');
+//          console.log('写入完毕');
+//          console.log('i18n-input写入中');
             var insertInputEle = $('.i18n-input');
             insertInputEle.each(function() {
                 var selectAttr=$(this).attr('selectorattr');
@@ -73,7 +73,7 @@ var execI18n = function(){
                 }
                 $(this).attr(selectAttr,$.i18n.prop($(this).attr('selectname')))
             })
-            console.log('input写入完毕');
+//          console.log('input写入完毕');
         }
     })
 };

@@ -1,7 +1,6 @@
 
 // 返回顶部
 if($(".fixed-circle").length){
-	console.log($(".fixed-circle"));
 	var gototop = $(".fixed-circle");
 	var $docu = $(document);
 	var scrollnum;
@@ -59,50 +58,28 @@ if($(".fixed-circle").length){
 	});
 	gototopfn();
 }
+//设置cookie
+  function setCookie(name, vaule, time) {
+    const d = new Date();
+    d.setTime(d.getTime() + (time * 365 * 24 * 60 * 60 * 1000));
+    const expires = 'expires=' + d.toUTCString();
+    document.cookie = name + '=' + vaule + '; ' + expires;
+    console.log(document.cookie)
+  }
 
-/**
- * cookie操作
- */
-var getCookie = function(name,value,options) {
-    if(typeof value != 'undefined') { // 如果给name和value，设置value
-        options = options || {};
-        if (value === null) {
-            value = '';
-            options.exprires = -1;
-        }
-        var expires = '';
-        if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
-            var date;
-            if(typeof options.expires == 'number') {
-                date = new Date();
-                date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
-            } else {
-                date = options.expires;
-            }
-            expires = '; expires=' + date.toUTCString();//使用expires属性，IE不支持max-age
-        }
-        var path = options.path ? '; path=' + options.path: '';
-        var domain = options.domain ? '; domain=' + options.domain: '';
-        var secure = options.secure ? '; secure' : '';
-        var s = [cookie, expires, path, domain, secure].join('');
-        var c = [name, '=', encodeURIComponent(value)].join('');
-        var cookie = [c,expires,path,domain, secure].join('');
-        document.cookie = cookie;
-    } else { // 只给了name，就获取cookie
-        var cookieValue = null;
-        if (document.cookie && document.cookie != '') {
-            var cookies = document.cookie.split(';');
-            for (var i = 0; i < cookies.length; i++) {
-                var cookie = jQuery.trim(cookies[i]);
-                if (cookie.substring(0,name.length + 1) == (name + '=')) {
-                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                    break;
-                }
-            }
-        }
-        return cookieValue;
+//获取cookie
+  function getCookie(name) {
+    const n = name + '=';
+    const ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      const c = ca[i].trim();
+      if (c.indexOf(n) === 0) {
+        return c.substring(n.length, c.length);
+      }
     }
-};
+    return '';
+  }
+
 /*(function($, doc) {
 	$.init();
 	$.plusReady(function() {

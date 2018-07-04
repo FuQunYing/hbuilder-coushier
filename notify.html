@@ -22,7 +22,7 @@
 
 	<body>
 		<header class="mui-bar mui-bar-nav bg-blue" style="padding-right: 15px;">
-			<h1 class="mui-title white">通知</h1>
+			<h1 class="mui-title white i18n" name="notify">通知</h1>
 		</header>
 		<div class="mui-content">
 			<div class="mui-content-padded">
@@ -33,17 +33,17 @@
                     <a class="mui-tab-item mui-active" href="#">
                         <span class="mui-icon iconfont icon-tongzhi">
                         </span>
-                        <span class="mui-tab-label">通知</span>
+                        <span class="mui-tab-label i18n" name="notify">通知</span>
                     </a>
                     <a class="mui-tab-item" href="count.html">
                         <span class="mui-icon iconfont icon-zhangben">
                         </span>
-                        <span class="mui-tab-label">对账
+                        <span class="mui-tab-label i18n" name="count">对账
                         </span>
                     </a>
                     <a class="mui-tab-item"  href="more.html">
                         <span class="mui-icon mui-icon-more"></span>
-                        <span class="mui-tab-label">更多</span>
+                        <span class="mui-tab-label i18n" name="more">更多</span>
                     </a>
                 </nav>
 			</div>
@@ -51,6 +51,8 @@
 		<script src="js/mui.min.js"></script>
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/app.js"></script>
+		<script src="js/jquery.i18n.properties.js" ></script>
+		<script src="js/language.js" ></script>
 		<script>
 			mui.init();
 			console.log(1);

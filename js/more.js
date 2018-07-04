@@ -17,14 +17,35 @@ var viewApi = mui('#app').view({
 });
 
 //语言选择
+function setLanguage(){
+	var $tits=$(".lanset li");
+	for(var i=0;i<$tits.length;i++){
+		if(getCookie('userLanguage') == $tits[i].title){
+			$tits[i].children[0].className='mui-icon mui-icon-checkmarkempty';
+			var sib=siblings($tits[i]);
+			for (var j=0;j<sib.length;j++){
+				sib[j].children[0].className='';
+			}
+		}
+	}
+}
+function siblings(elm) {
+	var a = [];
+	var p = elm.parentNode.children;
+	for(var i =0,pl= p.length;i<pl;i++) {
+		if(p[i] !== elm) a.push(p[i]);
+	}
+	return a;
+}
 $(".lanset").on('tap', 'li', function(e){
-	console.log($(this)[0].title);
 	var $that = $(e.target);
 	var language=$(this)[0].title;
 	$that.children('span').addClass('mui-icon mui-icon-checkmarkempty');
 	$that.siblings().children('span').removeClass('mui-icon mui-icon-checkmarkempty');
-	getCookie('userLanguage',language,{expires:30,path:'/'})
+	setCookie('userLanguage',language,2);
+	console.log(getCookie('userLanguage'));
 });
+setLanguage();
 
 //修改信息与修改密码切换
 $(".changeinfo").on('tap', function(){
