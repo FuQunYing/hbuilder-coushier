@@ -441,7 +441,7 @@
 								<li class="mui-table-view-cell">
 									<p class="mui-row">
 										<strong class="mui-col-xs-4 middle">操作：</strong>
-										<a id="openedit" class="mui-btn">&nbsp;编&nbsp;&nbsp辑&nbsp;</a>
+										<a id="openedit" class="mui-btn">&nbsp;编&nbsp;&nbsp;辑&nbsp;</a>
 									</p>
 								</li>
 								<li class="mui-table-view-cell center">没有找到匹配的记录</li>
@@ -788,7 +788,146 @@
 		</div>
 		
 		<!--TODO 产品管理-->
-		
+		<div id="pds" class="mui-page pds">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav white"></span>
+				</button>
+				<h1 class="mui-center mui-title white">产品管理</h1>
+			</div>
+			<div class="mui-page-content">
+				<div class="mui-card">
+					<div class="mui-card-header gray card-tit">产品管理 <span>查看结算产品</span></div>
+					<div class="mui-card-content">
+						<p class="sub-tit"><span class="mui-icon mui-icon-list"></span> <span>产品列表</span></p>
+						<hr />
+						<div class="content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<p class="mui-row">
+										<strong class="mui-col-xs-4">产品名称：</strong>
+										<span class="mui-col-xs-8">WeChat</span>
+									</p>
+								</li>
+								<li class="mui-table-view-cell">
+									<p class="mui-row">
+										<strong class="mui-col-xs-4">结算周期：</strong>
+										<span class="mui-col-sm-8">3</span>
+									</p>
+								</li>
+								<li class="mui-table-view-cell">
+									<p class="mui-row">
+										<strong class="mui-col-xs-4">钱包类型：</strong>
+										<span class="mui-col-xs-5">10%</span>
+									</p>
+								</li>
+								<li class="mui-table-view-cell">
+									<p class="mui-row">
+										<strong class="mui-col-xs-4">创建时间：</strong>
+										<span class="mui-col-xs-5">2016-09-08 17:09:27</span>
+									</p>
+								</li>
+								<li class="mui-table-view-cell">
+									<p class="mui-row">
+										<strong class="mui-col-xs-4">当前状态：</strong>
+										<span class="mui-col-xs-8">可使用</span>
+									</p>
+								</li>
+								<li class="mui-table-view-cell">
+									<p class="mui-row">
+										<strong class="mui-col-xs-4 middle">操作：</strong>
+										<a id="checkbtn" class="mui-btn bg-blue white">&nbsp;查&nbsp;&nbsp;看&nbsp;</a>
+									</p>
+								</li>
+								<!--<li class="mui-table-view-cell center">没有找到匹配的记录</li>-->
+							</ul>
+						</div>
+					</div>
+					<!--<div class="mui-card-footer">
+						<div class="center">
+							<ul class="mui-pagination">
+							    <li class="mui-disabled">
+							        <span> &laquo; </span>
+							    </li>
+							    <li class="mui-active">
+							        <a href="#">1</a>
+							    </li>
+							    <li>
+							        <a href="#">2</a>
+							    </li>
+							    <li>
+							        <a href="#">&raquo;</a>
+							    </li>
+							</ul>
+							<div class="mui-row" style="width: 80%; margin: 10px auto;">
+								<div class="mui-col-xs-1 middle">共</div>
+								<div class="mui-col-xs-2 middle">2</div>
+								<div class="mui-col-xs-1 middle">页，</div>
+								<div class="mui-col-xs-2 middle">跳到</div>
+								<div class="mui-col-xs-3">
+									<input type="number" />
+								</div>
+								<div class="mui-col-xs-1 middle">页</div>
+								<div class="mui-col-xs-2 middle">
+									<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined" style="padding: 5px;">GO</button>
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<!--编辑对对话框-->
+				<div id="check" class="editdialog">
+					<div class="mui-card">
+						<div class="mui-card-header gray card-tit">查看分配到的结算产品信息</div> <hr />
+						<div class="mui-card-content"  style="width:90%">
+							<div class="mui-row">
+								<div class="mui-col-xs-5 middle right pright">产品名称</div>
+								<div class="mui-col-xs-6">
+									<input type="text" value="wechat" disabled class="disabled-mask"/>
+								</div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-5 middle right pright">weixin</div>
+								<div class="mui-col-xs-6">
+									<input type="checkbox" name="weixin" disabled checked/>weixin,10%
+								</div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-5 middle right pright">结算周期</div>
+								<div class="mui-col-xs-6">
+									<input type="text" value="3" disabled class="disabled-mask"/>
+								</div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-5 middle right  pright">结算币种</div>
+								<div class="mui-col-xs-6">
+									<input type="text" value="cny" disabled class="disabled-mask"/>
+								</div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-5 middle right  pright">最低结算金额</div>
+								<div class="mui-col-xs-6">
+									<input type="text" value="30000" disabled class="disabled-mask"/>
+								</div>
+							</div>
+						</div>
+						<hr />
+						<div class="mui-card-footer right" style="padding-bottom: 10px;">
+							<button class="mui-btn mui-btn-gray closeedit" style="margin-right: 20px;">返回</button>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+	            	<span>&copy; 2016 HiPay</span>
+	            	<img src="images/bottomlogo.png"/>
+	            </div>
+				<div class="fixed-circle" id="totop">
+					<a href="#totop">
+						<span class="mui-icon mui-icon-arrowthinup"></span>
+					</a>
+				</div>
+			</div>
+		</div>		
 		<!--设置页面-->
 		<div id="feedback" class="mui-page feedback">
 			<div class="mui-navbar-inner mui-bar mui-bar-nav">

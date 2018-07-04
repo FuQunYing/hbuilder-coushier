@@ -156,6 +156,9 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	background-color: #32C5D2;
 	color:#fff;
 }
+input[type=text].disabled-mask{
+	background-color: #EFEFF4;
+}
 .mui-input-group input.disabled-mask, .mui-input-group textarea.disabled-mask{
 	background-color: #EFEFF4;
 }

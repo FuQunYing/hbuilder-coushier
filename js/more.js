@@ -123,6 +123,24 @@ function addUsers(){
 }
 addUsers();
 
+//查看产品
+function checkpds(){
+	var mask=mui.createMask(function(){
+		$("#check").fadeOut();
+		$("body").css('overflow','auto');
+	})
+	$("#checkbtn").on('tap',function(){
+		$("#check").fadeIn();
+		mask.show();
+	})
+	$(".closeedit").on('tap',function(){
+		$("#check").fadeOut();
+		$('body').css('overflow','auto');
+		mask.close();
+	})
+}
+checkpds();
+
  //退出操作******************
  $("#exit").on('tap', function() {
 	mui.confirm("是否退出登录？",'',['取消','确定'], function(e) {
