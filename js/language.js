@@ -2,13 +2,14 @@
 * 获取浏览器语言类型
 * @ return {string} 浏览器国家语言
 */
-var getNavLanguage = function(){
+/*var getNavLanguage = function(){
     if (navigator.appName == 'Netscape') {
         var navLanguage = navigator.language;
+        console.log(navLanguage);
         return navLanguage.substr(0,2);
     }
     return false;
-};
+};*/
 //设置默认语言类型为中文
 var i18nLanguage = "zh-CN";
 //设置网站支持的语言种类
@@ -26,23 +27,26 @@ var execI18n = function(){
     var sourceName = optionFile.attr('content');
     sourceName = sourceName.split('-');
     //首先获取用户浏览器设备之前选择过的语言类型
-    if (getCookie('userLanguage')) {
-        i18nLanguage = getCookie('userLanguage');
+    if (getStorage('userLanguage')) {
+        i18nLanguage = getStorage('userLanguage');
     } else {
-        //获取浏览器语言
+    	setStorage('userLanguage',i18nLanguage);
+        /*//获取浏览器语言
         var navLanguage = getNavLanguage();
         if (navLanguage) {
             //判断是否在网站支持的语言数组里
+            console.log(navLanguage)
             var charSize = $.inArray(navLanguage, webLanguage);
             if (charSize > -1) {
                 i18nLanguage = navLanguage;
                 //存到缓存中
-                getCookie('userLanguage', navLanguage)
+                setStorage('userLanguage', navLanguage)
+                console.log(navLanguage);
             }
         } else {
             console.log('not navigator');
             return false;
-        }
+        }*/
     }
     //需要引入i18n文件
     if($.i18n == undefined) {

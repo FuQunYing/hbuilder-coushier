@@ -79,6 +79,14 @@ if($(".fixed-circle").length){
     }
     return '';
   }
+ //设置storage
+ function setStorage(name,value){
+ 	localStorage.setItem(name,value);
+ }
+ //获取storage
+ function getStorage(name){
+ 	return localStorage.getItem(name);
+ }
 
 /*(function($, doc) {
 	$.init();

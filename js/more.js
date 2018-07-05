@@ -20,7 +20,7 @@ var viewApi = mui('#app').view({
 function setLanguage(){
 	var $tits=$(".lanset li");
 	for(var i=0;i<$tits.length;i++){
-		if(getCookie('userLanguage') == $tits[i].title){
+		if(getStorage('userLanguage') == $tits[i].title){
 			$tits[i].children[0].className='mui-icon mui-icon-checkmarkempty';
 			var sib=siblings($tits[i]);
 			for (var j=0;j<sib.length;j++){
@@ -42,8 +42,8 @@ $(".lanset").on('tap', 'li', function(e){
 	var language=$(this)[0].title;
 	$that.children('span').addClass('mui-icon mui-icon-checkmarkempty');
 	$that.siblings().children('span').removeClass('mui-icon mui-icon-checkmarkempty');
-	setCookie('userLanguage',language,2);
-	console.log(getCookie('userLanguage'));
+	setStorage('userLanguage',language);
+	console.log(getStorage('userLanguage'));
 });
 setLanguage();
 
