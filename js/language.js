@@ -67,7 +67,7 @@ var execI18n = function(){
 //              console.log($(this));
                 $(this).html($.i18n.prop($(this).attr('name')));
             });
-//          console.log('写入完毕');
+            console.log('写入完毕',i18nLanguage);
 //          console.log('i18n-input写入中');
             var insertInputEle = $('.i18n-input');
             insertInputEle.each(function() {
@@ -77,7 +77,6 @@ var execI18n = function(){
                 }
                 $(this).attr(selectAttr,$.i18n.prop($(this).attr('selectname')))
             })
-//          console.log('input写入完毕');
         }
     })
 };

@@ -26,7 +26,7 @@
 		<!--单页面主结构开始-->
 		<div id="count" class="mui-page">
 			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<h1 class="mui-center mui-title white">对账</h1>
+				<h1 class="mui-center mui-title white i18n" name="count">对账</h1>
 			</div>
 			
 			<div class="mui-page-content">
@@ -34,18 +34,18 @@
 					<div class="mui-scroll">
 						<ul class="mui-table-view">
 						    <li class="mui-table-view-cell mui-collapse">
-						        <a class="mui-navigate-right title" href="#">海贝管理系统</a>
+						        <a class="mui-navigate-right title i18n" href="#" name="hipay">海贝管理系统</a>
 								<hr />
 						        <div class="mui-collapse-content">
 						            <ul class="mui-table-view">
 									    <li class="mui-table-view-cell">
-									    	<a href="#refundorder"   class="mui-navigate-right" style="color: #8f8f94;">退款订单</a>
+									    	<a href="#refundorder"   class="mui-navigate-right i18n" style="color: #8f8f94;" name="refund">退款订单</a>
 									    </li>
 									    <li class="mui-table-view-cell">
-									    	<a href="#tradesummary"  class="mui-navigate-right" style="color: #8f8f94;">交易汇总</a>
+									    	<a href="#tradesummary"  class="mui-navigate-right i18n" style="color: #8f8f94;" name="summary">交易汇总</a>
 									    </li>
 									    <li class="mui-table-view-cell">
-									    	<a href="#mydownload"  class="mui-navigate-right" style="color: #8F8F94;">我的下载</a>
+									    	<a href="#mydownload"  class="mui-navigate-right i18n" style="color: #8F8F94;" name="download">我的下载</a>
 									    </li>
 									</ul>
 						        </div>
@@ -226,15 +226,15 @@
                 <nav class="mui-bar mui-bar-tab">
                     <a class="mui-tab-item" href="notify.html">
                         <span class="mui-icon iconfont icon-tongzhi"></span>
-                        <span class="mui-tab-label">通知</span>
+                        <span class="mui-tab-label" name="notify">通知</span>
                     </a>
                     <a class="mui-tab-item  mui-active"  href="#">
                         <span class="mui-icon iconfont icon-zhangben"></span>
-                        <span class="mui-tab-label">对账</span>
+                        <span class="mui-tab-label" name="count">对账</span>
                     </a>
                     <a class="mui-tab-item"  href="more.html">
                         <span class="mui-icon mui-icon-more"></span>
-                        <span class="mui-tab-label">更多</span>
+                        <span class="mui-tab-label" name="more">更多</span>
                     </a>
                 </nav>
                 <!--底部tab end-->
@@ -632,5 +632,7 @@
 		<script src="js/mui.view.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/count.js"></script>
+		<script src="js/jquery.i18n.properties.js" ></script>
+		<script src="js/language.js" ></script>
 	</body>
 </html>

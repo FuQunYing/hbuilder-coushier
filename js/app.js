@@ -58,6 +58,7 @@ if($(".fixed-circle").length){
 	});
 	gototopfn();
 }
+
 //设置cookie
   function setCookie(name, vaule, time) {
     const d = new Date();
@@ -87,24 +88,3 @@ if($(".fixed-circle").length){
  function getStorage(name){
  	return localStorage.getItem(name);
  }
-
-/*(function($, doc) {
-	$.init();
-	$.plusReady(function() {
-		$.oldBack = mui.back;
-		var backButtonPress = 0;
-		$.back = function(event) {
-			console.log('返回1');
-			backButtonPress++;
-			if (backButtonPress > 1) {
-				plus.runtime.quit();
-			} else {
-				plus.nativeUI.toast('再按一次退出应用');
-			}
-			setTimeout(function() {
-				backButtonPress = 0;
-			}, 1000);
-			return false;
-		};
-	});
-}(mui, document));*/
