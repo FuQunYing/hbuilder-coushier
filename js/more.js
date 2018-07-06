@@ -43,6 +43,7 @@ $(".lanset").on('tap', 'li', function(e){
 	$that.children('span').addClass('mui-icon mui-icon-checkmarkempty');
 	$that.siblings().children('span').removeClass('mui-icon mui-icon-checkmarkempty');
 	setStorage('userLanguage',language);
+//	window.reload();
 	console.log(getStorage('userLanguage'));
 });
 setLanguage();
