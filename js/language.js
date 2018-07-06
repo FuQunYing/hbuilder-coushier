@@ -72,8 +72,11 @@ var execI18n = function(){
             var insertInputEle = $('.i18n-input');
             insertInputEle.each(function() {
                 var selectAttr=$(this).attr('selectorattr');
+                console.log($(this));
                 if(!selectAttr) {
                     selectAttr = 'placeholder';
+                }else{
+                	selectAttr = 'value';
                 }
                 $(this).attr(selectAttr,$.i18n.prop($(this).attr('selectname')))
             })
