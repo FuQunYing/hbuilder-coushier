@@ -34,7 +34,7 @@
 					<div class="mui-scroll">
 						<ul class="mui-table-view">
 						    <li class="mui-table-view-cell mui-collapse">
-						        <a class="mui-navigate-right title i18n" href="#" name="hipay">海贝管理系统</a>
+						        <a class="mui-navigate-right title i18n" href="#" name="thipay">海贝管理系统</a>
 								<hr />
 						        <div class="mui-collapse-content">
 						            <ul class="mui-table-view">
@@ -57,28 +57,30 @@
 							<!--内容区-->
 							<div class="mui-card-content">
 								<div  class="mui-row">
-									<div  class="mui-col-sm-4 mui-col-xs-4 middle i18n" name="devicenumber">设备号</div>
-									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+									<div  class="mui-col-xs-6 middle i18n lit-font" name="devicenumber">设备号</div>
+									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-sm-4 mui-col-xs-4 middle i18n" name="deviceremark">设备备注</div>
-									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+									<div  class="mui-col-xs-6 middle i18n lit-font" name="deviceremark">设备备注</div>
+									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-sm-4 mui-col-xs-4 middle i18n" name="cashier">收银员</div>
-									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+									<div  class="mui-col-xs-6 middle i18n lit-font" name="cashier">收银员</div>
+									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-sm-4 mui-col-xs-4 middle i18n" name="operator">海贝操作员</div>
-									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+									<div  class="mui-col-xs-6 middle i18n lit-font" name="operator">海贝操作员</div>
+									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-sm-4 mui-col-xs-4 middle i18n" name="ordernum">商户单号</div>
-									<div  class="mui-col-sm-8 mui-col-xs-8"><input type="text"/></div>
+									<div  class="mui-col-xs-6 middle">
+										<span class="i18n lit-font middle" name="ordernum">商户单号</span>
+									</div>
+									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-sm-4 mui-col-xs-4 middle i18n" name="devicetype">设备类型</div>
-									<div  class="mui-col-sm-8 mui-col-xs-8">
+									<div  class="mui-col-xs-6 middle i18n lit-font" name="devicetype">设备类型</div>
+									<div  class="mui-col-xs-6">
 										<select name="">
 											<option value="" class="i18n" name="select">选择设备类型...</option>
 											<option value="" class="i18n" name="hipay">海贝</option>
@@ -90,8 +92,8 @@
 									</div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-sm-4 mui-col-xs-4 middle i18n" name="wallet">钱包类型</div>
-									<div  class="mui-col-sm-8 mui-col-xs-8">
+									<div  class="mui-col-xs-6 middle i18n lit-font" name="wallet">钱包类型</div>
+									<div  class="mui-col-xs-6">
 										<select name="">
 											<option value="" class="i18n" name="select">选择钱包类型...</option>
 											<option value="" class="i18n" name="wechatpay">微信支付</option>
@@ -103,8 +105,8 @@
 									</div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-sm-4 mui-col-xs-4 middle-time i18n" name="tradetime">交易时间</div>
-									<div class="mui-col-xs-8">
+									<div  class="mui-col-xs-6 middle-time i18n lit-font" name="tradetime">交易时间</div>
+									<div class="mui-col-xs-6">
 										<div  class="mui-col-sm-12 mui-col-xs-12">
 											<input type="text" placeholder="From" onfocus="(this.type='date')" class="time"/>
 										</div>
@@ -114,82 +116,82 @@
 									</div>
 								</div>
 								<div class="mui-row center">
-									<button class="mui-btn mui-btn-success mui-col-xs-3 right left center">查找</button>
-									<button class="mui-btn mui-btn-danger mui-col-xs-3 right center">清除</button>
-									<button class="mui-btn mui-btn-primary mui-col-xs-3 center">下载</button>
+									<button class="mui-btn mui-btn-success mui-col-xs-3 right left center i18n" name="search">查找</button>
+									<button class="mui-btn mui-btn-danger mui-col-xs-3 right center i18n" name="clean">清除</button>
+									<button class="mui-btn mui-btn-primary mui-col-xs-3 center i18n" name="download">下载</button>
 								</div>						
 							</div>
 						</div>
 						<div class="mui-card">
 							<div class="mui-card-header gray card-tit">
-								<span class="mui-icon mui-icon-list list-icon"></span>商户交易详情列表
+								<span class="mui-icon mui-icon-list list-icon"></span><span class="i18n lit-font" name="tradedetail">商户交易详情</span>
 							</div>
 							<hr />
 							<div class="mui-card-content">
 								<ul class="mui-table-view">
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">设备类型：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="devicetype">设备类型：</strong>
 											<span class="mui-col-xs-8">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">设备号：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="devicenumber">设备号：</strong>
 											<span class="mui-col-sm-8">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">设备备注：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="deviceremark">设备备注：</strong>
 											<span class="mui-col-xs-5">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">收银员：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="cashier">收银员：</strong>
 											<span class="mui-col-xs-5">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">海贝操作员：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="operator">海贝操作员：</strong>
 											<span class="mui-col-xs-8">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">输入金额：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="entermoney">输入金额：</strong>
 											<span class="mui-col-xs-4">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">币种：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="moneytype">币种：</strong>
 											<span class="mui-col-xs-8">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">交易时间：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="tradetime">交易时间：</strong>
 											<span class="mui-col-xs-8">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">商户单号：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="ordernum">商户单号：</strong>
 											<span class="mui-col-xs-8">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">钱包类型：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="wallet">钱包类型：</strong>
 											<span class="mui-col-xs-8">数据</span>
 										</p>
 									</li>
 									<li class="mui-table-view-cell">
 										<p class="mui-row">
-											<strong class="mui-col-xs-4">操作：</strong>
+											<strong class="mui-col-xs-4 i18n lit-font" name="opes">操作：</strong>
 											<span class="mui-col-xs-8">操作</span>
 										</p>
 									</li>
@@ -199,9 +201,9 @@
 								<ul class="mui-table-view">
 									<li class="mui-table-view-cell center black">No records found to show</li>
 									<li class="mui-table-view-cell mui-row">
-										<span class="mui-col-xs-3 center">总设备数量</span>
-										<span class="mui-col-xs-6 center">总交易金额（币种为输入金额币种）</span>
-										<span class="mui-col-xs-3 center">总交易笔数</span>
+										<span class="mui-col-xs-3 center i18n" name="totaldevice">总设备数量</span>
+										<span class="mui-col-xs-6 center i18n" name="totalamount">总交易金额（币种为输入金额币种）</span>
+										<span class="mui-col-xs-3 center i18n" name="totaltrades">总交易笔数</span>
 									</li>
 									<li class="mui-table-view-cell mui-row">
 										<span class="mui-col-xs-3 center">0</span>
@@ -226,15 +228,15 @@
                 <nav class="mui-bar mui-bar-tab">
                     <a class="mui-tab-item" href="notify.html">
                         <span class="mui-icon iconfont icon-tongzhi"></span>
-                        <span class="mui-tab-label" name="notify">通知</span>
+                        <span class="mui-tab-label i18n" name="notify">通知</span>
                     </a>
                     <a class="mui-tab-item  mui-active"  href="#">
                         <span class="mui-icon iconfont icon-zhangben"></span>
-                        <span class="mui-tab-label" name="count">对账</span>
+                        <span class="mui-tab-label i18n" name="count">对账</span>
                     </a>
                     <a class="mui-tab-item"  href="more.html">
                         <span class="mui-icon mui-icon-more"></span>
-                        <span class="mui-tab-label" name="more">更多</span>
+                        <span class="mui-tab-label i18n" name="more">更多</span>
                     </a>
                 </nav>
                 <!--底部tab end-->
@@ -248,15 +250,15 @@
 				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
 					<span class="mui-icon mui-icon-left-nav white"></span>
 				</button>
-				<h1 class="mui-center mui-title white">退款订单</h1>
+				<h1 class="mui-center mui-title white i18n" name="refund">退款订单</h1>
 			</div>
 			<div class="mui-page-content">
 				<div class="mui-card">
-					<div class="mui-card-header gray card-tit">商户退款查询</div><hr />
+					<div class="mui-card-header gray card-tit i18n" name="refundquery">商户退款查询</div><hr />
 					<div class="mui-card-content">
 						<div  class="mui-row">
-							<div  class="mui-col-sm-5 mui-col-xs-5 middle-time">退款申请时间</div>
-							<div class="mui-col-xs-7">
+							<div  class="mui-col-xs-6 middle-time i18n lit-font" name="refundtime">退款申请时间</div>
+							<div class="mui-col-xs-6">
 								<div  class="mui-col-sm-12 mui-col-xs-12">
 									<input type="text" placeholder="From" onfocus="(this.type='date')" class="time"/>
 								</div>
@@ -266,57 +268,61 @@
 							</div>
 						</div>
 						<div  class="mui-row">
-							<div  class="mui-col-sm-5 mui-col-xs-5 middle-time">退款单号</div>
-							<div  class="mui-col-sm-7 mui-col-xs-7">
-								<div class="mui-col-xs-12">
-									<select name="">
-										<option value="">退款商户单号</option>
-										<option value="">退款交易单号</option>										
-									</select>
-								</div>
-								<div class="mui-col-xs-12">
-									<input type="text" />
-								</div>
-							</div>
-						</div>
-						<div  class="mui-row">
-							<div  class="mui-col-sm-5 mui-col-xs-5 middle-time">交易单号</div>
-							<div  class="mui-col-sm-7 mui-col-xs-7">
-								<div class="mui-col-xs-12">
-									<select name="">
-										<option value="">交易单号</option>
-										<option value="">商户单号</option>										
-									</select>
-								</div>
-								<div class="mui-col-xs-12">
-									<input type="text" />
+							<div  class="mui-col-xs-6 middle-time i18n lit-font" name="refundnum">退款单号</div>
+							<div  class="mui-col-xs-6">
+								<div class="row">
+									<div class="mui-col-xs-12">
+										<select name="">
+											<option value="" class="i18n" name="refundmnum">退款商户单号</option>
+											<option value="" class="i18n" name="refundtnum">退款交易单号</option>										
+										</select>
+									</div>
+									<div class="mui-col-xs-12">
+										<input type="text" />
+									</div>
 								</div>
 							</div>
 						</div>
 						<div  class="mui-row">
-							<div  class="mui-col-sm-5 mui-col-xs-5 middle">退款状态</div>
-							<div  class="mui-col-sm-7 mui-col-xs-7">
+							<div  class="mui-col-xs-6 middle-time i18n lit-font" name="tradenum">交易单号</div>
+							<div  class="mui-col-xs-6">
+								<div class="row">
+									<div class="mui-col-xs-12">
+										<select name="">
+											<option value="" class="i18n" name="tradenum">交易单号</option>
+											<option value="" class="i18n" name="mordernum">商户单号</option>										
+										</select>
+									</div>
+									<div class="mui-col-xs-12">
+										<input type="text" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div  class="mui-row">
+							<div  class="mui-col-xs-6 middle i18n lit-font" name="refundstatus">退款状态</div>
+							<div  class="mui-col-xs-6">
 								<select name="">
-									<option value="">全部</option>
-									<option value="">已申请</option>
-									<option value="">受理成功</option>
-									<option value="">受理失败</option>
-									<option value="">退款成功</option>
-									<option value="">退款失败</option>
+									<option value="" class="i18n" name="all">全部</option>
+									<option value="" class="i18n" name="submitted">已申请</option>
+									<option value="" class="i18n" name="accepted">受理成功</option>
+									<option value="" class="i18n" name="acceptfailed">受理失败</option>
+									<option value="" class="i18n" name="refundsuc">退款成功</option>
+									<option value="" class="i18n" name="refundfail">退款失败</option>
 								</select>
 							</div>
 						</div>
 						<div class="mui-row">
-							<div class="mui-col-xs-5 middle">设备号</div>
-							<div class="mui-col-xs-7">
+							<div class="mui-col-xs-6 middle i18n lit-font" name="devicenumber">设备号</div>
+							<div class="mui-col-xs-6">
 								<input type="text" />
 							</div>
 						</div>
 						<div  class="mui-row">
-							<div  class="mui-col-sm-5 mui-col-xs-5 middle">退款入口</div>
-							<div  class="mui-col-sm-7 mui-col-xs-7">
+							<div  class="mui-col-xs-6 middle i18n lit-font" name="refundentr">退款入口</div>
+							<div  class="mui-col-xs-6">
 								<select name="">
-									<option value="">全部</option>
+									<option value="" class="i18n" name="all">全部</option>
 									<option value="">Hipay Mgt</option>
 									<option value="">ZTC</option>
 									<option value="">Hipay Device</option>
@@ -324,94 +330,100 @@
 							</div>
 						</div>
 						<div class="mui-row center">
-							<button class="mui-btn mui-btn-success mui-col-xs-3 right left center">查找</button>
-							<button class="mui-btn mui-btn-danger mui-col-xs-3 right center">清除</button>
-							<button class="mui-btn mui-btn-primary mui-col-xs-3 center">下载</button>
+							<button class="mui-btn mui-btn-success mui-col-xs-3 right left center i18n" name="search">查找</button>
+							<button class="mui-btn mui-btn-danger mui-col-xs-3 right center i18n" name="clean">清除</button>
+							<button class="mui-btn mui-btn-primary mui-col-xs-3 center i18n" name="download">下载</button>
 						</div>						
 					</div>
 				</div>
 				<div class="mui-card">
 					<div class="mui-card-header gray card-tit">
-						<span class="mui-icon mui-icon-list list-icon"></span>商户退款列表
+						<span class="mui-icon mui-icon-list list-icon"></span> <span class="i18n" name="refundlist">商户退款列表</span>
 					</div>
 					<hr />
 					<div class="mui-card-content">
 						<ul class="mui-table-view">
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款申请时间：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundtime">退款申请时间：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款商户单号：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundnum">退款商户单号：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款交易单号：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundtnum">退款交易单号：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">交易单号：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="tradenum">交易单号：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">商户单号：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="mordernum">商户单号：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">设备号：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="devicenumber">设备号：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">申请退款金额：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="deviceremark">设备备注：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">实退金额：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundmoney">申请退款金额：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">币种：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundedmoney">实退金额：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款入口：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="moneytype">币种：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款完成时间：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundentr">退款入口：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款状态：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundedtime">退款完成时间：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款失败原因：</strong>
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundstatus">退款状态：</strong>
+									<span class="mui-col-xs-7">数据</span>
+								</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-row">
+									<strong class="mui-col-xs-5 i18n lit-font" name="refundfailres">退款失败原因：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
@@ -421,27 +433,27 @@
 						<ul class="mui-table-view">
 							<li class="mui-table-view-cell center black">No records found to show</li>
 							<li class="mui-table-view-cell mui-row">
-								<strong class="mui-col-xs-6 center">退款汇总</strong>
-								<strong class="mui-col-xs-6 center">退款笔数</strong>
+								<strong class="mui-col-xs-6 center i18n" name="refundsum">退款汇总</strong>
+								<strong class="mui-col-xs-6 center i18n" name="refundsnum">退款笔数</strong>
 							</li>
 							<li class="mui-table-view-cell mui-row">
-								<span class="mui-col-xs-6 center">申请中</span>
+								<span class="mui-col-xs-6 center i18n" name="appling">申请中</span>
 								<span class="mui-col-xs-6 center">0</span>
 							</li>
 							<li class="mui-table-view-cell mui-row">
-								<span class="mui-col-xs-6 center">受理成功</span>
+								<span class="mui-col-xs-6 center i18n" name="accepted">受理成功</span>
 								<span class="mui-col-xs-6 center">0</span>
 							</li>
 							<li class="mui-table-view-cell mui-row">
-								<span class="mui-col-xs-6 center">受理失败</span>
+								<span class="mui-col-xs-6 center i18n" name="acceptfailed">受理失败</span>
 								<span class="mui-col-xs-6 center">0</span>
 							</li>
 							<li class="mui-table-view-cell mui-row">
-								<span class="mui-col-xs-6 center">退款成功</span>
+								<span class="mui-col-xs-6 center i18n" name="refundsuc">退款成功</span>
 								<span class="mui-col-xs-6 center">0</span>
 							</li>
 							<li class="mui-table-view-cell mui-row">
-								<span class="mui-col-xs-6 center">退款失败</span>
+								<span class="mui-col-xs-6 center i18n" name="refundfail">退款失败</span>
 								<span class="mui-col-xs-6 center">0</span>
 							</li>
 						</ul>
