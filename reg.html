@@ -35,7 +35,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/app.js"></script>
 	<script type="text/javascript">
-		var lan=getCookie("userLanguage");
+		var lan=getStorage("userLanguage");
 		if(lan == 'zh-TW') {
 			$(".info").html('如需註冊商戶,請致電400-637-1020（非中國地區請加撥0086）；如需成為收銀員,請聯繫店主');
 		} else if (lan == 'en') {

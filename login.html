@@ -98,7 +98,7 @@
 	</head>
 
 	<body>
-		<div class="mui-content bg-white">
+		<div class="mui-content bg-white" style="height: 100%;">
 			<div class="logo">
 			<img src="images/login.png"/>
 		</div>
@@ -141,6 +141,7 @@
 		<script src="js/language.js"></script>
 		<script>
 			mui.init();
+			$("body").css("min-height",screen.availHeight-50);
 			mui('body').on('tap','#reg',function(){
 				document.location.href="reg.html";
 			});

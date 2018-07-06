@@ -46,39 +46,39 @@
 							<li class="mui-table-view-cell">
 								<a id="userinfo" href="#info"  class="mui-navigate-right i18n" name="person">个人信息</a>
 							</li>
-							<li class="mui-table-view-cell">
+							<!--<li class="mui-table-view-cell">
 								<a id="businessinfo" href="#binfo" class="mui-navigate-right i18n" name="compony">商户信息</a>
-							</li>
+							</li>-->
 							<li class="mui-table-view-cell">
 								<a id="cash" href="#cashpage"  class="mui-navigate-right i18n" name="device">设备管理</a>
 							</li>
 							<li class="mui-table-view-cell">
 								<a id="cashier" href="#cashierpage"  class="mui-navigate-right i18n" name="user">用户管理</a>
 							</li>
-							<li class="mui-table-view-cell">
+							<!--<li class="mui-table-view-cell">
 								<a id="products" href="#pds"  class="mui-navigate-right i18n" name="product">产品管理</a>
-							</li>
+							</li>-->
 							<li class="mui-table-view-cell">
 								<a id="feedback-btn" href="#feedback" class="mui-navigate-right i18n" name="set">设置</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<nav class="mui-bar mui-bar-tab">
-                    <a class="mui-tab-item" href="notify.html">
-                        <span class="mui-icon iconfont icon-tongzhi"></span>
-                        <span class="mui-tab-label i18n" name="notify">通知</span>
-                    </a>
-                    <a class="mui-tab-item"  href="count.html">
-                        <span class="mui-icon iconfont icon-zhangben"></span>
-                        <span class="mui-tab-label i18n" name="count">对账</span>
-                    </a>
-                    <a class="mui-tab-item  mui-active"  href="#">
-                        <span class="mui-icon mui-icon-more"></span>
-                        <span class="mui-tab-label i18n" name="more">更多</span>
-                    </a>
-                </nav>
 			</div>
+			<nav class="mui-bar mui-bar-tab">
+		        <a class="mui-tab-item" href="notify.html">
+		            <span class="mui-icon iconfont icon-tongzhi"></span>
+		            <span class="mui-tab-label i18n" name="notify">通知</span>
+		        </a>
+		        <a class="mui-tab-item"  href="count.html">
+		            <span class="mui-icon iconfont icon-zhangben"></span>
+		            <span class="mui-tab-label i18n" name="count">对账</span>
+		        </a>
+		        <a class="mui-tab-item  mui-active"  href="#">
+		            <span class="mui-icon mui-icon-more"></span>
+		            <span class="mui-tab-label i18n" name="more">更多</span>
+		        </a>
+		    </nav>
 			<!--页面主内容区结束-->
 		</div>
 		
@@ -197,177 +197,7 @@
 				</div>
 			</div>
 		</div>
-		
-		<!--商户信息展示-->
-		<div id="binfo" class="mui-page binfo">
-			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
-					<span class="mui-icon mui-icon-left-nav white"></span>
-				</button>
-				<h1 class="mui-center mui-title white i18n" name="compony">商户信息</h1>
-			</div>
-			<div class="mui-page-content">
-				<div class="mui-card">
-					<div class="mui-card-header gray card-tit">
-						<strong class="i18n" name="componyinfo">商户信息 </strong>
-						<span class="i18n" name="ctit">查看并编辑商户信息</span>
-					</div>
-					<hr />
-					<div class="mui-card-content">
-						<div class="userinfo">
-							<img src="images/avatar.jpg" class="avatar" alt="" />
-							<p class="lowercase">XXXXXX商户</p>
-							<p class="upcase">&nbsp;DINGDING</p>
-						</div>
-						<div class="userinfo-detail">
-							<p class="info-tit">
-								<span class="i18n" name="about">关于</span>
-								<span class="name">dingding</span>
-							</p>
-							<p class="upcase"><span class="mui-icon mui-icon-email"></span>dingding@qq.com</p>
-							<p class="upcase"><span class="mui-icon mui-icon-phone"></span>123456789</p>
-							<p class="upcase"><span class="mui-icon mui-icon-plusempty"></span>2016-09-09 14:35:47</p>
-							<p class="upcase"><span class="mui-icon mui-icon-checkmarkempty"></span>2018-08-08 08:08:08</p>
-						</div>
-					</div>
-				</div>
-				<div class="mui-card">
-					<div class="mui-card-header change">
-						<span class="i18n" name="cinfo">商户信息</span>
-						<p id="titchange">
-							<span class="binfo activate i18n" name="basicinfo">基本信息</span>
-							<span class="changeuser i18n" name="mainadmin">主管理员</span>
-						</p>
-					</div>
-					<hr />
 					
-					<form class="binfo-form mui-input-group">
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="qingsuan">清算类型</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text"  disabled class="disabled-mask i18n-input" selectname="inputqingsuan" selectattr="placeholder"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="cname">公司名称</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" value="XXXXXX商户" disabled class="disabled-mask"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="country">国家</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" value="中华人民共和国" disabled class="disabled-mask"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="timezone">时区</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" value="UTC-10" disabled class="disabled-mask"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="site">省/州</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" class="i18n-input" selectname="inputsite" selectattr="placeholder" />
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="city">城市</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" class="i18n-input" selectname="inputcity" selectattr="placeholder"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="addr1">地址1</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" class="i18n-input" selectname="inputaddr1" selectattr="placeholder"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="addr2">地址2</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" class="i18n-input" selectname="inputaddr2" selectattr="placeholder"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="postcode">邮政编码</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" class="i18n-input" selectname="inputpostcode" selectattr="placeholder"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="tel">联系电话</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" class="i18n-input" selectname="inputtel" selectattr="placeholder"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="mpipid">MPIP商户ID</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" disabled class="disabled-mask"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle right pright md-font i18n" name="signkey">支付签名Key</div>
-							<div  class="mui-col-sm-8 mui-col-xs-8">
-								<input type="text" disabled class="disabled-mask"/>
-							</div>
-						</div>
-						<div class="mui-row center">
-							<button class="mui-btn confirm i18n" name="confirmchange">确认修改</button>
-						</div>
-					</form>
-					
-					<form class="cuser-form hide mui-input-group">
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-xs-5 middle right pright md-font i18n" name="nick">昵称</div>
-							<div  class="mui-col-xs-7">
-								<input type="text" selectname="inputnick" selectattr="placeholder" value="dingding" class="mui-input-clear i18n-input"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-xs-5 middle right pright md-font i18n" name="xing">姓氏</div>
-							<div  class="mui-col-xs-7">
-								<input type="text" class="mui-input-clear i18n-input" selectname="inputxing" selectattr="placeholder" value="ding"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-xs-5 middle right pright md-font i18n" name="ming">名字</div>
-							<div  class="mui-col-xs-7">
-								<input type="text" class="mui-input-clear i18n-input" selectname="inputming" selectattr="placeholder" value="ding"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-xs-5 middle right pright md-font i18n" name="email">电子邮件</div>
-							<div  class="mui-col-xs-7">
-								<input type="text" class="mui-input-clear i18n-input" selectname="inputemail" selectattr="placeholder" value="dingding@qq.com"/>
-							</div>
-						</div>
-						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-xs-5 middle right pright md-font i18n" name="tel">联系电话</div>
-							<div  class="mui-col-xs-7">
-								<input type="text" class="mui-input-clear i18n-input" selectname="inputtel" selectattr="placeholder" value="123456789"/>
-							</div>
-						</div>
-						<div class="mui-row center">
-							<button class="mui-btn confirm i18n" name="confirmchange">确认修改</button>
-						</div>
-					</form>
-				</div>
-				<!--公用-->
-				<div class="copyright">
-	            	<span>&copy; 2016 HiPay</span>
-	            	<img src="images/bottomlogo.png"/>
-	            </div>
-				<div class="fixed-circle" id="totop">
-					<a href="#totop">
-						<span class="mui-icon mui-icon-arrowthinup"></span>
-					</a>
-				</div>
-			</div>
-		</div>
-		
 		<!--设备管理-->
 		<div id="cashpage" class="mui-page cashpage">
 			<div class="mui-navbar-inner mui-bar mui-bar-nav">
@@ -491,7 +321,7 @@
 						<div class="mui-card-header gray card-tit i18n" name="dinfo">设备信息</div> <hr />
 						<div class="mui-card-content"  style="width:90%">
 							<div class="mui-row">
-								<div class="mui-col-xs-5 middle-lg right i18n" name="amountset">金额设置方式</div>
+								<div class="mui-col-xs-6 middle-lg right i18n lit-font" name="amountset">金额设置方式</div>
 								<div class="mui-col-xs-6">
 									<div class="mui-row">
 										<div class="mui-input-row mui-radio mui-left mui-col-xs-12 manual">
@@ -507,14 +337,14 @@
 							</div>
 							<div class="regular">
 								<div class="mui-row">
-									<div class="mui-col-xs-5 middle right pright i18n" name="amount">金额</div>
+									<div class="mui-col-xs-6 middle right pright i18n lit-font" name="amount">金额</div>
 									<div class="mui-col-xs-6">
 										<input type="text" value="1.00"/>
 									</div>
 								</div>
 							</div>
 							<div class="mui-row">
-								<div class="mui-col-xs-5 middle right pright i18n" name="remark">备注</div>
+								<div class="mui-col-xs-6 middle right pright i18n lit-font" name="remark">备注</div>
 								<div class="mui-col-xs-6">
 									<input type="text" name="" id="" value="33"/>
 								</div>
@@ -523,7 +353,7 @@
 						<hr />
 						<div class="mui-card-footer right bottomp">
 							<button class="mui-btn mui-btn-gray closeedit i18n" name="back">返回</button>
-							<button class="mui-btn mui-btn-primary mui-btn-outlined mright i18n" name="udpate">更新</button>
+							<button class="mui-btn mui-btn-primary mui-btn-outlined mright i18n" name="update">更新</button>
 						</div>
 					</div>
 				</div>
@@ -545,68 +375,72 @@
 				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
 					<span class="mui-icon mui-icon-left-nav white"></span>
 				</button>
-				<h1 class="mui-center mui-title white">收银员管理</h1>
+				<h1 class="mui-center mui-title white i18n" name="user">用户管理</h1>
 			</div>
 			<div class="mui-page-content">
 				<div class="mui-card">
-					<div class="mui-card-header gray card-tit">用户管理 <span>查看和管理收银员</span></div>
+					<div class="mui-card-header gray card-tit">
+						<strong class="i18n" name="user">用户管理 </strong>
+						<span class="i18n" name="utit">查看和管理收银员</span>
+					</div>
 					<div class="mui-card-content">
 						<p class="sub-tit">
-							<span class="mui-icon mui-icon-list"></span> <span>用户列表</span>
+							<span class="mui-icon mui-icon-list"></span> <span class="i18n" name="ulist">用户列表</span>
 						</p>
 						<button class="mui-btn addbtn">
 							<span class="mui-icon mui-icon-plusempty"></span>
-							添加操作人员
+							<span class="i18n" name="adduser">添加操作人员</span>
 						</button>
 						<hr />
 						<div class="content">
 							<ul class="mui-table-view">
 							    <li class="mui-table-view-cell mui-collapse mui-active">
 							        <a class="mui-navigate-right" href="#">
-							        	用户账号：<span class="blue">zongyanshanghucashier</span>
+							        	<span class="i18n" name="usercount">用户账号：</span>
+							        	<span class="blue">zongyanshanghucashier</span>
 							        </a>
 							        <div class="mui-collapse-content">
 							            <ul class="mui-table-view">
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户账号</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="usercount">用户账号</span>
 						                        	<span class="mui-col-xs-9 blue">zongyanshanghucashier</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户昵称</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="username">用户昵称</span>
 						                        	<span class="mui-col-xs-9 blue">zongyanshanghucashier</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户类型</span>
-						                        	<span class="mui-col-xs-9 blue">收银员</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="usertype">用户类型</span>
+						                        	<span class="mui-col-xs-9 blue i18n" name="cashier">收银员</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">电子邮件</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="email">电子邮件</span>
 						                        	<span class="mui-col-xs-9 blue">zongyanshanghucashier@wq.com</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">联系电话</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="tel">联系电话</span>
 						                        	<span class="mui-col-xs-9 blue">123456789</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">创建时间</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="createtime">创建时间</span>
 						                        	<span class="mui-col-xs-9 blue">2016-11-09 17:58:16</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">当前状态</span>
-						                        	<span class="mui-col-xs-9 blue">已激活</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="curstatus">当前状态</span>
+						                        	<span class="mui-col-xs-9 blue i18n" name="active">已激活</span>
 						                        </p>
 						                    </li>
 						                </ul>
@@ -614,107 +448,57 @@
 							    </li>
 							    <li class="mui-table-view-cell mui-collapse">
 							        <a class="mui-navigate-right" href="#">
-							        	用户账号：<span class="blue">shouyinv115</span>
+							        	<span class="i18n" name="usercount">用户账号：</span>
+							        	<span class="blue">shouyinv115</span>
 							        </a>
 							        <div class="mui-collapse-content">
 							            <ul class="mui-table-view">
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户账号</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="usercount">用户账号</span>
 						                        	<span class="mui-col-xs-9 blue">shouyinv115</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户昵称</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="username">用户昵称</span>
 						                        	<span class="mui-col-xs-9 blue">shouyinv115</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户类型</span>
-						                        	<span class="mui-col-xs-9 blue">收银员</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="usertype">用户类型</span>
+						                        	<span class="mui-col-xs-9 blue i18n" name="cashier">收银员</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">电子邮件</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="email">电子邮件</span>
 						                        	<span class="mui-col-xs-9 blue">shouyinv115@v.ci</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">联系电话</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="tel">联系电话</span>
 						                        	<span class="mui-col-xs-9 blue">123456789</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">创建时间</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="createtime">创建时间</span>
 						                        	<span class="mui-col-xs-9 blue">2017-01-19 11:22:27</span>
 						                        </p>
 						                    </li>
 						                    <li class="mui-table-view-cell">
 						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">当前状态</span>
-						                        	<span class="mui-col-xs-9 blue">已激活</span>
+						                        	<span class="mui-col-xs-3 gray i18n" name="curstatus">当前状态</span>
+						                        	<span class="mui-col-xs-9 blue i18n" name="active">已激活</span>
 						                        </p>
 						                    </li>
 						                </ul>
 							        </div>
 							    </li>
-							    <li class="mui-table-view-cell mui-collapse">
-							        <a class="mui-navigate-right" href="#">
-							        	用户账号：<span class="blue">shanghuyunying</span>
-							        </a>
-							        <div class="mui-collapse-content">
-							            <ul class="mui-table-view">
-						                    <li class="mui-table-view-cell">
-						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户账号</span>
-						                        	<span class="mui-col-xs-9 blue">shanghuyunying</span>
-						                        </p>
-						                    </li>
-						                    <li class="mui-table-view-cell">
-						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户昵称</span>
-						                        	<span class="mui-col-xs-9 blue">宗艳商户运营</span>
-						                        </p>
-						                    </li>
-						                    <li class="mui-table-view-cell">
-						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">用户类型</span>
-						                        	<span class="mui-col-xs-9 blue">运营</span>
-						                        </p>
-						                    </li>
-						                    <li class="mui-table-view-cell">
-						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">电子邮件</span>
-						                        	<span class="mui-col-xs-9 blue">shanghuyunying@cas.dsa</span>
-						                        </p>
-						                    </li>
-						                    <li class="mui-table-view-cell">
-						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">联系电话</span>
-						                        	<span class="mui-col-xs-9 blue">123456789</span>
-						                        </p>
-						                    </li>
-						                    <li class="mui-table-view-cell">
-						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">创建时间</span>
-						                        	<span class="mui-col-xs-9 blue">2018-03-05 14:58:36</span>
-						                        </p>
-						                    </li>
-						                    <li class="mui-table-view-cell">
-						                        <p class="mui-row">
-						                        	<span class="mui-col-xs-3 gray">当前状态</span>
-						                        	<span class="mui-col-xs-9 blue">已激活</span>
-						                        </p>
-						                    </li>
-						                </ul>
-							        </div>
-							    </li>
-							</ul>
+							   </ul>
 						</div>
 						
 					</div>
@@ -722,52 +506,52 @@
 				<!--添加操作人员对话框-->
 				<div id="editcashier" class="editdialog">
 					<div class="mui-card">
-						<div class="mui-card-header gray card-tit">添加新的操作员</div> <hr />
+						<div class="mui-card-header gray card-tit i18n" name="addtit">添加新的操作员</div> <hr />
 						<div class="mui-card-content"  style="width:90%">
 							<div class="mui-row">
-								<div class="mui-col-xs-4 middle-lg right">用户类型</div>
+								<div class="mui-col-xs-5 middle-lg right i18n lit-font" name="usertype">用户类型</div>
 								<div class="mui-col-xs-7">
 									<div class="mui-row">
 										<div class="mui-input-row mui-radio mui-left mui-col-xs-12 manual">
-											<label for="cashiers" class="lit-font">收银员</label>									
+											<label for="cashiers" class="lit-font i18n" name="cashier">收银员</label>									
 											<input type="radio" name="user" checked="" id="cashiers"/>
 										</div>
 										<div class="mui-input-row mui-radio mui-left mui-col-xs-12 fixed">
-											<label for="operators" class="lit-font">商户运营</label>										
+											<label for="operators" class="lit-font i18n" name="mo">商户运营</label>										
 											<input type="radio" name="user" id="operators"/>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="mui-row">
-								<div class="mui-col-xs-4 middle right pright">账号</div>
+								<div class="mui-col-xs-5 middle right pright i18n lit-font" name="account">账号</div>
 								<div class="mui-col-xs-7">
-									<input type="text" placeholder="请输入用户账号"/>
+									<input type="text" class="i18n-input" selectname="inputaccount" selectattr="placeholder"/>
 								</div>
 							</div>
 							<div class="mui-row">
-								<div class="mui-col-xs-4 middle right pright">昵称</div>
+								<div class="mui-col-xs-5 middle right pright i18n lit-font" name="nick">昵称</div>
 								<div class="mui-col-xs-7">
-									<input type="text" placeholder="请输入昵称"/>
+									<input type="text" class="i18n-input" selectname="inputnick" selectattr="placeholder"/>
 								</div>
 							</div>
 							<div class="mui-row">
-								<div class="mui-col-xs-4 middle right pright">电子邮件</div>
+								<div class="mui-col-xs-5 middle right pright i18n lit-font" name="email">电子邮件</div>
 								<div class="mui-col-xs-7">
-									<input type="email" placeholder="请输入电子邮件"/>
+									<input type="email" class="i18n-input" selectname="inputemail" selectattr="placeholder"/>
 								</div>
 							</div>
 							<div class="mui-row">
-								<div class="mui-col-xs-4 middle right pright">手机号码</div>
+								<div class="mui-col-xs-5 middle right pright i18n lit-font" name="tel">手机号码</div>
 								<div class="mui-col-xs-7">
-									<input type="text" placeholder="请输入手机号码"/>
+									<input type="text" class="i18n-input" selectname="inputtel" selectattr="placeholder"/>
 								</div>
 							</div>
 						</div>
 						<hr />
 						<div class="mui-card-footer right bottomp">
-							<button class="mui-btn mui-btn-gray closeedit">返回</button>
-							<button class="mui-btn bg-blue white mright">创建</button>
+							<button class="mui-btn mui-btn-gray closeedit i18n" name="back">返回</button>
+							<button class="mui-btn bg-blue white mright i18n" name="create">创建</button>
 						</div>
 					</div>
 				</div>
@@ -782,173 +566,33 @@
 				</div>
 			</div>
 		</div>
-		
-		<!--产品管理-->
-		<div id="pds" class="mui-page pds">
-			<div class="mui-navbar-inner mui-bar mui-bar-nav">
-				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
-					<span class="mui-icon mui-icon-left-nav white"></span>
-				</button>
-				<h1 class="mui-center mui-title white">产品管理</h1>
-			</div>
-			<div class="mui-page-content">
-				<div class="mui-card">
-					<div class="mui-card-header gray card-tit">产品管理 <span>查看结算产品</span></div>
-					<div class="mui-card-content">
-						<p class="sub-tit"><span class="mui-icon mui-icon-list"></span> <span>产品列表</span></p>
-						<hr />
-						<div class="content">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell">
-									<p class="mui-row">
-										<strong class="mui-col-xs-4">产品名称：</strong>
-										<span class="mui-col-xs-8">WeChat</span>
-									</p>
-								</li>
-								<li class="mui-table-view-cell">
-									<p class="mui-row">
-										<strong class="mui-col-xs-4">结算周期：</strong>
-										<span class="mui-col-sm-8">3</span>
-									</p>
-								</li>
-								<li class="mui-table-view-cell">
-									<p class="mui-row">
-										<strong class="mui-col-xs-4">钱包类型：</strong>
-										<span class="mui-col-xs-5">10%</span>
-									</p>
-								</li>
-								<li class="mui-table-view-cell">
-									<p class="mui-row">
-										<strong class="mui-col-xs-4">创建时间：</strong>
-										<span class="mui-col-xs-5">2016-09-08 17:09:27</span>
-									</p>
-								</li>
-								<li class="mui-table-view-cell">
-									<p class="mui-row">
-										<strong class="mui-col-xs-4">当前状态：</strong>
-										<span class="mui-col-xs-8">可使用</span>
-									</p>
-								</li>
-								<li class="mui-table-view-cell">
-									<p class="mui-row">
-										<strong class="mui-col-xs-4 middle">操作：</strong>
-										<a id="checkbtn" class="mui-btn bg-blue white">&nbsp;查&nbsp;&nbsp;看&nbsp;</a>
-									</p>
-								</li>
-								<!--<li class="mui-table-view-cell center">没有找到匹配的记录</li>-->
-							</ul>
-						</div>
-					</div>
-					<!--<div class="mui-card-footer">
-						<div class="center">
-							<ul class="mui-pagination">
-							    <li class="mui-disabled">
-							        <span> &laquo; </span>
-							    </li>
-							    <li class="mui-active">
-							        <a href="#">1</a>
-							    </li>
-							    <li>
-							        <a href="#">2</a>
-							    </li>
-							    <li>
-							        <a href="#">&raquo;</a>
-							    </li>
-							</ul>
-							<div class="mui-row" style="width: 80%; margin: 10px auto;">
-								<div class="mui-col-xs-1 middle">共</div>
-								<div class="mui-col-xs-2 middle">2</div>
-								<div class="mui-col-xs-1 middle">页，</div>
-								<div class="mui-col-xs-2 middle">跳到</div>
-								<div class="mui-col-xs-3">
-									<input type="number" />
-								</div>
-								<div class="mui-col-xs-1 middle">页</div>
-								<div class="mui-col-xs-2 middle">
-									<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined" style="padding: 5px;">GO</button>
-								</div>
-							</div>
-						</div>
-					</div>-->
-				</div>
-				<!--编辑对对话框-->
-				<div id="check" class="editdialog">
-					<div class="mui-card">
-						<div class="mui-card-header gray card-tit">查看分配到的结算产品信息</div> <hr />
-						<div class="mui-card-content"  style="width:90%">
-							<div class="mui-row">
-								<div class="mui-col-xs-5 middle right pright">产品名称</div>
-								<div class="mui-col-xs-6">
-									<input type="text" value="wechat" disabled class="disabled-mask"/>
-								</div>
-							</div>
-							<div class="mui-row">
-								<div class="mui-col-xs-5 middle right pright">weixin</div>
-								<div class="mui-col-xs-6">
-									<input type="checkbox" name="weixin" disabled checked/>weixin,10%
-								</div>
-							</div>
-							<div class="mui-row">
-								<div class="mui-col-xs-5 middle right pright">结算周期</div>
-								<div class="mui-col-xs-6">
-									<input type="text" value="3" disabled class="disabled-mask"/>
-								</div>
-							</div>
-							<div class="mui-row">
-								<div class="mui-col-xs-5 middle right  pright">结算币种</div>
-								<div class="mui-col-xs-6">
-									<input type="text" value="cny" disabled class="disabled-mask"/>
-								</div>
-							</div>
-							<div class="mui-row">
-								<div class="mui-col-xs-5 middle right  pright">最低结算金额</div>
-								<div class="mui-col-xs-6">
-									<input type="text" value="30000" disabled class="disabled-mask"/>
-								</div>
-							</div>
-						</div>
-						<hr />
-						<div class="mui-card-footer right bottomp">
-							<button class="mui-btn mui-btn-gray closeedit mright">返回</button>
-						</div>
-					</div>
-				</div>
-				<div class="copyright">
-	            	<span>&copy; 2016 HiPay</span>
-	            	<img src="images/bottomlogo.png"/>
-	            </div>
-				<div class="fixed-circle" id="totop">
-					<a href="#totop">
-						<span class="mui-icon mui-icon-arrowthinup"></span>
-					</a>
-				</div>
-			</div>
-		</div>		
-		
-			
+					
 		<!--设置页面-->
 		<div id="feedback" class="mui-page feedback">
 			<div class="mui-navbar-inner mui-bar mui-bar-nav">
 				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
 					<span class="mui-icon mui-icon-left-nav white"></span>
 				</button>
-				<h1 class="mui-center mui-title white">设置</h1>
+				<h1 class="mui-center mui-title white i18n" name="set">设置</h1>
 			</div>
 			<div class="mui-page-content">
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell">
-						<a id="language" href="#lanset" class="mui-navigate-right">语言设置</a>
+						<a id="language" href="#lanset" class="mui-navigate-right i18n" name="lan">语言设置</a>
 					</li>
 					<li class="mui-table-view-cell">
-						<a id="about" href="#aboutus" class="mui-navigate-right">关于我们</a>
+						<a id="about" href="#aboutus" class="mui-navigate-right i18n" name="aboutus">关于我们</a>
 					</li>
 					<li class="mui-table-view-cell">
-						<a id="version">版本号 <span style="float: right;">1.0</span></a>
+						<a id="version">
+							<span class="i18n" name="version">版本号 </span>
+							<span style="float: right;">1.0</span>
+						</a>
 					</li>
 				</ul>
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell" style="text-align: center;">
-						<a id='exit' class="white bg-blue">退出登录</a>
+						<a id='exit' class="white bg-blue i18n" name="logout">退出登录</a>
 					</li>
 				</ul>
 			</div>

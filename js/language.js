@@ -67,16 +67,13 @@ var execI18n = function(){
 //              console.log($(this));
                 $(this).html($.i18n.prop($(this).attr('name')));
             });
-            console.log('写入完毕',i18nLanguage);
+//          console.log('写入完毕',i18nLanguage);
 //          console.log('i18n-input写入中');
             var insertInputEle = $('.i18n-input');
             insertInputEle.each(function() {
                 var selectAttr=$(this).attr('selectorattr');
-                console.log($(this));
                 if(!selectAttr) {
                     selectAttr = 'placeholder';
-                }else{
-                	selectAttr = 'value';
                 }
                 $(this).attr(selectAttr,$.i18n.prop($(this).attr('selectname')))
             })
