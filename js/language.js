@@ -13,7 +13,7 @@
 //设置默认语言类型为中文
 var i18nLanguage = "zh-CN";
 //设置网站支持的语言种类
-var webLanguage = ['zh-CN', 'zh-TW', 'en'];
+var webLanguage = ['zh-CN', 'zh-TW', 'en', 'ja'];
 /**
  * 执行页面i18n方法
  */
