@@ -44,22 +44,22 @@
 					<div class="mui-scroll">
 						<ul class="mui-table-view mui-table-view-chevron">
 							<li class="mui-table-view-cell">
-								<a id="userinfo" href="#info"  class="mui-navigate-right">个人信息</a>
+								<a id="userinfo" href="#info"  class="mui-navigate-right i18n" name="person">个人信息</a>
 							</li>
 							<li class="mui-table-view-cell">
-								<a id="businessinfo" href="#binfo" class="mui-navigate-right">商户信息</a>
+								<a id="businessinfo" href="#binfo" class="mui-navigate-right i18n" name="compony">商户信息</a>
 							</li>
 							<li class="mui-table-view-cell">
-								<a id="cash" href="#cashpage"  class="mui-navigate-right">设备管理</a>
+								<a id="cash" href="#cashpage"  class="mui-navigate-right i18n" name="device">设备管理</a>
 							</li>
 							<li class="mui-table-view-cell">
-								<a id="cashier" href="#cashierpage"  class="mui-navigate-right">用户管理</a>
+								<a id="cashier" href="#cashierpage"  class="mui-navigate-right i18n" name="user">用户管理</a>
 							</li>
 							<li class="mui-table-view-cell">
-								<a id="products" href="#pds"  class="mui-navigate-right">产品管理</a>
+								<a id="products" href="#pds"  class="mui-navigate-right i18n" name="product">产品管理</a>
 							</li>
 							<li class="mui-table-view-cell">
-								<a id="feedback-btn" href="#feedback" class="mui-navigate-right">设置</a>
+								<a id="feedback-btn" href="#feedback" class="mui-navigate-right i18n" name="set">设置</a>
 							</li>
 						</ul>
 					</div>
@@ -67,15 +67,15 @@
 				<nav class="mui-bar mui-bar-tab">
                     <a class="mui-tab-item" href="notify.html">
                         <span class="mui-icon iconfont icon-tongzhi"></span>
-                        <span class="mui-tab-label">通知</span>
+                        <span class="mui-tab-label i18n" name="notify">通知</span>
                     </a>
                     <a class="mui-tab-item"  href="count.html">
                         <span class="mui-icon iconfont icon-zhangben"></span>
-                        <span class="mui-tab-label">对账</span>
+                        <span class="mui-tab-label i18n" name="count">对账</span>
                     </a>
                     <a class="mui-tab-item  mui-active"  href="#">
                         <span class="mui-icon mui-icon-more"></span>
-                        <span class="mui-tab-label">更多</span>
+                        <span class="mui-tab-label i18n" name="more">更多</span>
                     </a>
                 </nav>
 			</div>
@@ -88,11 +88,14 @@
 				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
 					<span class="mui-icon mui-icon-left-nav white"></span>
 				</button>
-				<h1 class="mui-center mui-title white">个人信息</h1>
+				<h1 class="mui-center mui-title white i18n" name="person">个人信息</h1>
 			</div>
 			<div class="mui-page-content">
 				<div class="mui-card">
-					<div class="mui-card-header gray card-tit">个人信息 <span>查看并编辑个人信息</span></div>
+					<div class="mui-card-header gray card-tit">
+						<strong class="card-tit i18n" name="person">个人信息 </strong>
+						<span class="i18n" name="ptit">查看并编辑个人信息</span>
+					</div>
 					<hr />
 					<div class="mui-card-content">
 						<div class="userinfo">
@@ -101,7 +104,10 @@
 							<p class="upcase">&nbsp;DINGDING</p>
 						</div>
 						<div class="userinfo-detail">
-							<p class="info-tit">关于dingding</p>
+							<p class="info-tit">
+								<span class="i18n" name="about">关于</span>
+								<span class="name">dingding</span>
+							</p>
 							<p class="upcase"><span class="mui-icon mui-icon-email"></span>dingding@qq.com</p>
 							<p class="upcase"><span class="mui-icon mui-icon-phone"></span>123456789</p>
 							<p class="upcase"><span class="mui-icon mui-icon-plusempty"></span>2016-09-09 14:35:47</p>
@@ -111,71 +117,71 @@
 				</div>
 				<div class="mui-card">
 					<div class="mui-card-header change">
-						账号信息
+						<span class="accountinfo i18n" name="accountinfo">账号信息</span>
 						<p>
-							<span class="changeinfo activate">个人信息</span>
-							<span class="changepwd">修改密码</span>
+							<span class="changeinfo activate i18n" name="person">个人信息</span>
+							<span class="changepwd i18n" name="changepwd">修改密码</span>
 						</p>
 					</div>
 					<hr />
 					
 					<form class="info-form mui-input-group">
 						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font">昵称</div>
+							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font i18n" name="nick">昵称</div>
 							<div  class="mui-col-sm-9 mui-col-xs-9">
-								<input type="text" placeholder="请输入昵称" value="digding" class="mui-input-clear"/>
+								<input type="text" selectname="inputnick" selectattr="placeholder" value="digding" class="mui-input-clear"/>
 							</div>
 						</div>
 						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font">姓氏</div>
+							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font i18n" name="xing">姓氏</div>
 							<div  class="mui-col-sm-9 mui-col-xs-9">
-								<input type="text" placeholder="请输入姓氏" value="ding" class="mui-input-clear"/>
+								<input type="text" selectname="inputxing" selectattr="placeholder" value="ding" class="mui-input-clear"/>
 							</div>
 						</div>
 						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font">名字</div>
+							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font i18n" name="ming">名字</div>
 							<div  class="mui-col-sm-9 mui-col-xs-9">
-								<input type="text" placeholder="请输入名字" value="ding" class="mui-input-clear"/>
+								<input type="text" selectname="inputming" selectattr="placeholder" value="ding" class="mui-input-clear"/>
 							</div>
 						</div>
 						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font">电子邮件</div>
+							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font i18n" name="email">电子邮件</div>
 							<div  class="mui-col-sm-9 mui-col-xs-9">
-								<input type="text" placeholder="请输入邮箱" value="dingding@qq.com" class="mui-input-clear"/>
+								<input type="text" selectname="inputemail" selectattr="placeholder" value="dingding@qq.com" class="mui-input-clear"/>
 							</div>
 						</div>
 						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font">联系电话</div>
+							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font i18n" name="tel">联系电话</div>
 							<div  class="mui-col-sm-9 mui-col-xs-9">
-								<input type="text" placeholder="请输入电话" value="123456789" class="mui-input-clear"/>
+								<input type="text" selectname="inputtel" selectattr="placeholder" value="123456789" class="mui-input-clear"/>
 							</div>
 						</div>
 						<div class="mui-row center">
-							<button class="mui-btn confirm">确认修改</button>
+							<button class="mui-btn confirm i18n" name="confirmchange">确认修改</button>
 						</div>
 					</form>
 					
 					<form class="pwd-form hide mui-input-group">
 						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font">当前密码</div>
+							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font i18n" name="curpwd">当前密码</div>
 							<div  class="mui-col-sm-9 mui-col-xs-9">
-								<input type="password" class="mui-input-clear" placeholder="请输入当前密码"/>
+								<input type="password" class="mui-input-clear i18n-input" selectname="inputcurpwd" selectattr="placeholder"/>
 							</div>
 						</div>
 						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font">新密码</div>
+							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font i18n" name="newpwd">新密码</div>
 							<div  class="mui-col-sm-9 mui-col-xs-9">
-								<input type="password" class="mui-input-clear" placeholder="请输入新密码"/>
+								<input type="password" class="mui-input-clear i18n-input" selectname="inputnewpwd" selectattr="placeholder"/>
 							</div>
 						</div>
 						<div  class="mui-row mui-input-row">
-							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font">确认密码</div>
+							<div  class="mui-col-sm-3 mui-col-xs-3 middle right pright md-font i18n" name="confirmnewpwd">确认密码</div>
 							<div  class="mui-col-sm-9 mui-col-xs-9">
-								<input type="password" class="mui-input-clear" placeholder="请确认新密码"/>
+								<input type="password" class="mui-input-clear i18n-input" selectname="inputconfirmnewpwd" selectattr="placeholder"/>
 							</div>
 						</div>
 						<div class="mui-row center">
-							<button class="mui-btn confirm">确认修改</button>
+							<button class="mui-btn confirm i18n" name="confirmchange">确认修改</button>
 						</div>
 					</form>
 				</div>

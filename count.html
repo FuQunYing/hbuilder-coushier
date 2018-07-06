@@ -45,7 +45,7 @@
 									    	<a href="#tradesummary"  class="mui-navigate-right i18n" style="color: #8f8f94;" name="summary">交易汇总</a>
 									    </li>
 									    <li class="mui-table-view-cell">
-									    	<a href="#mydownload"  class="mui-navigate-right i18n" style="color: #8F8F94;" name="download">我的下载</a>
+									    	<a href="#mydownload"  class="mui-navigate-right i18n" style="color: #8F8F94;" name="mydownload">我的下载</a>
 									    </li>
 									</ul>
 						        </div>
@@ -57,29 +57,29 @@
 							<!--内容区-->
 							<div class="mui-card-content">
 								<div  class="mui-row">
-									<div  class="mui-col-xs-6 middle i18n lit-font" name="devicenumber">设备号</div>
+									<div  class="mui-col-xs-6 middle i18n lit-font pright" name="devicenumber">设备号</div>
 									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-xs-6 middle i18n lit-font" name="deviceremark">设备备注</div>
+									<div  class="mui-col-xs-6 middle i18n lit-font pright" name="deviceremark">设备备注</div>
 									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-xs-6 middle i18n lit-font" name="cashier">收银员</div>
+									<div  class="mui-col-xs-6 middle i18n lit-font pright" name="cashier">收银员</div>
 									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-xs-6 middle i18n lit-font" name="operator">海贝操作员</div>
+									<div  class="mui-col-xs-6 middle i18n lit-font pright" name="operator">海贝操作员</div>
 									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-xs-6 middle">
-										<span class="i18n lit-font middle" name="ordernum">商户单号</span>
+									<div  class="mui-col-xs-6 middle pright i18n lit-font " name="ordernum">
+										商户单号
 									</div>
 									<div  class="mui-col-xs-6"><input type="text"/></div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-xs-6 middle i18n lit-font" name="devicetype">设备类型</div>
+									<div  class="mui-col-xs-6 middle i18n lit-font pright" name="devicetype">设备类型</div>
 									<div  class="mui-col-xs-6">
 										<select name="">
 											<option value="" class="i18n" name="select">选择设备类型...</option>
@@ -92,7 +92,7 @@
 									</div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-xs-6 middle i18n lit-font" name="wallet">钱包类型</div>
+									<div  class="mui-col-xs-6 middle i18n lit-font pright" name="wallet">钱包类型</div>
 									<div  class="mui-col-xs-6">
 										<select name="">
 											<option value="" class="i18n" name="select">选择钱包类型...</option>
@@ -105,7 +105,7 @@
 									</div>
 								</div>
 								<div  class="mui-row">
-									<div  class="mui-col-xs-6 middle-time i18n lit-font" name="tradetime">交易时间</div>
+									<div  class="mui-col-xs-6 middle-time i18n lit-font pright" name="tradetime">交易时间</div>
 									<div class="mui-col-xs-6">
 										<div  class="mui-col-sm-12 mui-col-xs-12">
 											<input type="text" placeholder="From" onfocus="(this.type='date')" class="time"/>
@@ -124,7 +124,7 @@
 						</div>
 						<div class="mui-card">
 							<div class="mui-card-header gray card-tit">
-								<span class="mui-icon mui-icon-list list-icon"></span><span class="i18n lit-font" name="tradedetail">商户交易详情</span>
+								<span class="mui-icon mui-icon-list list-icon"></span><span class="i18n" name="tradedetail">商户交易详情</span>
 							</div>
 							<hr />
 							<div class="mui-card-content">
@@ -477,15 +477,15 @@
 				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
 					<span class="mui-icon mui-icon-left-nav white"></span>
 				</button>
-				<h1 class="mui-center mui-title white">交易汇总</h1>
+				<h1 class="mui-center mui-title white i18n" name="summary">交易汇总</h1>
 			</div>
 			<div class="mui-page-content">
 				<div class="mui-card">
-					<div class="mui-card-header gray card-tit">交易数据汇总</div><hr />
+					<div class="mui-card-header gray card-tit i18n" name="summary">交易数据汇总</div><hr />
 					<div class="mui-card-content">
 						<div  class="mui-row">
-							<div  class="mui-col-sm-4 mui-col-xs-4 middle-time">交易时间</div>
-							<div class="mui-col-xs-8">
+							<div  class="mui-col-xs-5 middle-time i18n lit-font" name="tradetime">交易时间</div>
+							<div class="mui-col-xs-7">
 								<div  class="mui-col-sm-12 mui-col-xs-12">
 									<input type="text" placeholder="From" onfocus="(this.type='date')" class="time"/>
 								</div>
@@ -495,9 +495,9 @@
 							</div>
 						</div>
 						<div class="mui-row center">
-							<button class="mui-btn mui-btn-success mui-col-xs-3 right left center">查找</button>
-							<button class="mui-btn mui-btn-danger mui-col-xs-3 right center">清除</button>
-							<button class="mui-btn mui-btn-primary mui-col-xs-3 center">下载</button>
+							<button class="mui-btn mui-btn-success mui-col-xs-3 right left center i18n" name="search">查找</button>
+							<button class="mui-btn mui-btn-danger mui-col-xs-3 right center i18n" name="clean">清除</button>
+							<button class="mui-btn mui-btn-primary mui-col-xs-3 center i18n" name="download">下载</button>
 						</div>						
 					</div>
 				</div>
@@ -506,49 +506,49 @@
 						<ul class="mui-table-view">
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">设备号：</strong>
+									<strong class="mui-col-xs-5 i18n" name="devicenumber">设备号：</strong>
 									<span class="mui-col-sm-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">设备备注：</strong>
+									<strong class="mui-col-xs-5 i18n" name="deviceremark">设备备注：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">交易金额汇总：</strong>
+									<strong class="mui-col-xs-5 i18n" name="tradevalue">交易金额汇总：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">交易笔数汇总：</strong>
+									<strong class="mui-col-xs-5 i18n" name="tradenums">交易笔数汇总：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款金额汇总：</strong>
+									<strong class="mui-col-xs-5 i18n" name="refundvalue">退款金额汇总：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">退款 笔数汇总：</strong>
+									<strong class="mui-col-xs-5 i18n" name="refundnums">退款 笔数汇总：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">净收金额汇总：</strong>
+									<strong class="mui-col-xs-5 i18n" name="totalrecive">净收金额汇总：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
 							<li class="mui-table-view-cell">
 								<p class="mui-row">
-									<strong class="mui-col-xs-5">币种：</strong>
+									<strong class="mui-col-xs-5 i18n" name="moneytype">币种：</strong>
 									<span class="mui-col-xs-7">数据</span>
 								</p>
 							</li>
@@ -571,14 +571,14 @@
 							    </li>
 							</ul>
 							<div class="mui-row" style="width: 80%; margin: 10px auto;">
-								<div class="mui-col-xs-1 middle">共</div>
+								<div class="mui-col-xs-1 middle i18n" name="gong">共</div>
 								<div class="mui-col-xs-2 middle">2</div>
-								<div class="mui-col-xs-1 middle">页，</div>
-								<div class="mui-col-xs-2 middle">跳到</div>
+								<div class="mui-col-xs-1 middle i18n" name="page">页，</div>
+								<div class="mui-col-xs-2 middle i18n" name="jump">跳到</div>
 								<div class="mui-col-xs-3">
 									<input type="number" />
 								</div>
-								<div class="mui-col-xs-1 middle">页</div>
+								<div class="mui-col-xs-1 middle i18n" name="page">页</div>
 								<div class="mui-col-xs-2 middle">
 									<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined" style="padding: 5px;">GO</button>
 								</div>
@@ -604,18 +604,21 @@
 				<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
 					<span class="mui-icon mui-icon-left-nav white"></span>
 				</button>
-				<h1 class="mui-center mui-title white">我的下载</h1>
+				<h1 class="mui-center mui-title white i18n" name="mydownload">我的下载</h1>
 			</div>
 			<div class="mui-page-content">
 				<div class="mui-card">
-					<div class="mui-card-header gray card-tit">我的下载 <span class="lit-font">交易下载任务</span></div>
+					<div class="mui-card-header gray card-tit">
+						<span class="i18n" name="mydownload">我的下载 </span>
+						<span class="lit-font i18n" name="downloadtask">交易下载任务</span>
+					</div>
 					<div class="mui-card-content">
-						<p class="sub-tit"><span class="mui-icon mui-icon-list"></span> <span>任务列表</span></p>
+						<p class="sub-tit"><span class="mui-icon mui-icon-list"></span> <span class="i18n" name="downloadlist">任务列表</span></p>
 						<hr />
 						<ul class="mui-table-view">
 							<li class="mui-table-view-cell mui-row">
-								<strong class="mui-col-xs-6 center">下载时间</strong>
-								<strong class="mui-col-xs-6 center">文件名</strong>
+								<strong class="mui-col-xs-6 center i18n" name="downloadtime">下载时间</strong>
+								<strong class="mui-col-xs-6 center i18n" name="filename">文件名</strong>
 							</li>
 							<li class="mui-table-view-cell mui-row">
 								<span class="mui-col-xs-6 center">数据</span>
